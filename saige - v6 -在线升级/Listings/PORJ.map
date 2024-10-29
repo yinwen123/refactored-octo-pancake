@@ -1,0 +1,1255 @@
+Component: ARM Compiler 5.06 update 6 (build 750) Tool: armlink [4d35ed]
+
+==============================================================================
+
+Section Cross References
+
+    adc.o(i.adc_check) refers to uidiv.o(.text) for __aeabi_uidivmod
+    adc.o(i.adc_check) refers to flash.o(i.flash_adc_updata) for flash_adc_updata
+    adc.o(i.adc_check) refers to adc.o(i.__ARM_common_switch8) for __ARM_common_switch8
+    adc.o(i.adc_check) refers to adc.o(.data) for .data
+    adc.o(i.adc_check) refers to flash.o(.data) for Init_mode
+    adc.o(i.adc_check) refers to com.o(.data) for V60_STA
+    adc.o(i.adc_check) refers to adc.o(.constdata) for .constdata
+    adc.o(.data) refers to adc.o(.constdata) for V48_ADC0
+    flash.o(i.flash_adc_updata) refers to flash.o(i.flash_write_word) for flash_write_word
+    flash.o(i.flash_adc_updata) refers to flash.o(.data) for .data
+    flash.o(i.flash_adc_updata) refers to adc.o(.data) for ADC_ref
+    flash.o(i.flash_init) refers to flash.o(.bss) for .bss
+    flash.o(i.flash_init) refers to rf.o(.data) for RF_addr
+    flash.o(i.flash_init) refers to flash.o(.data) for .data
+    flash.o(i.flash_init) refers to adc.o(.data) for ADC_ref
+    flash.o(i.flash_odo_updata) refers to flash.o(i.flash_earse) for flash_earse
+    flash.o(i.flash_odo_updata) refers to flash.o(i.flash_write_word) for flash_write_word
+    flash.o(i.flash_odo_updata) refers to flash.o(.data) for .data
+    flash.o(i.flash_sta_updata) refers to flash.o(i.flash_earse) for flash_earse
+    flash.o(i.flash_sta_updata) refers to flash.o(i.flash_write_byte) for flash_write_byte
+    flash.o(i.flash_sta_updata) refers to flash.o(.data) for .data
+    flash.o(i.flash_user_updata) refers to flash.o(i.flash_earse) for flash_earse
+    flash.o(i.flash_user_updata) refers to flash.o(i.flash_write_word) for flash_write_word
+    flash.o(i.flash_user_updata) refers to flash.o(.bss) for .bss
+    main.o(i.BTIM2_IRQHandler) refers to adc.o(i.adc_check) for adc_check
+    main.o(i.BTIM2_IRQHandler) refers to com.o(i.com_task_50us) for com_task_50us
+    main.o(i.BTIM2_IRQHandler) refers to key.o(i.quake_check) for quake_check
+    main.o(i.BTIM2_IRQHandler) refers to nfc522.o(i.alm_send) for alm_send
+    main.o(i.BTIM2_IRQHandler) refers to usart485.o(.data) for over_time
+    main.o(i.BTIM2_IRQHandler) refers to nfc522.o(.data) for Tim_out
+    main.o(i.BTIM2_IRQHandler) refers to main.o(.data) for .data
+    main.o(i.car_stat_updata) refers to com.o(.bss) for car_stat
+    main.o(i.car_stat_updata) refers to led.o(.data) for temp
+    main.o(i.car_stat_updata) refers to led.o(.bss) for Led2_data
+    main.o(i.car_stat_updata) refers to usart485.o(.data) for R_mod
+    main.o(i.car_stat_updata) refers to main.o(.data) for .data
+    main.o(i.car_stat_updata) refers to usart485.o(.data) for tcs_sta
+    main.o(i.main) refers to port.o(i.gpio_init) for gpio_init
+    main.o(i.main) refers to flash.o(i.flash_init) for flash_init
+    main.o(i.main) refers to adc.o(i.adc_init) for adc_init
+    main.o(i.main) refers to main.o(i.wdt_init) for wdt_init
+    main.o(i.main) refers to tim.o(i.tim_init) for tim_init
+    main.o(i.main) refers to tim.o(i.GTIM_INIT) for GTIM_INIT
+    main.o(i.main) refers to usart485.o(i.UART2_INIT) for UART2_INIT
+    main.o(i.main) refers to main.o(i.startDisplay) for startDisplay
+    main.o(i.main) refers to main.o(i.start_cout) for start_cout
+    main.o(i.main) refers to main.o(i.car_stat_updata) for car_stat_updata
+    main.o(i.main) refers to led.o(i.show_speed) for show_speed
+    main.o(i.main) refers to main.o(i.run_cartoon) for run_cartoon
+    main.o(i.main) refers to main.o(i.show_Rmod) for show_Rmod
+    main.o(i.main) refers to led.o(i.show_card) for show_card
+    main.o(i.main) refers to uidiv.o(.text) for __aeabi_uidivmod
+    main.o(i.main) refers to led.o(i.power_level_display) for power_level_display
+    main.o(i.main) refers to led.o(i.show_gear) for show_gear
+    main.o(i.main) refers to com.o(i.lc_add) for lc_add
+    main.o(i.main) refers to led.o(i.show_voltage) for show_voltage
+    main.o(i.main) refers to led.o(i.show_mileage) for show_mileage
+    main.o(i.main) refers to led.o(i.show_zuoxia2_data) for show_zuoxia2_data
+    main.o(i.main) refers to led.o(i.time_dis) for time_dis
+    main.o(i.main) refers to led.o(.bss) for Led_data
+    main.o(i.main) refers to main.o(.data) for .data
+    main.o(i.main) refers to com.o(.data) for yxt_rcv
+    main.o(i.main) refers to com.o(.data) for yxt_rcv1
+    main.o(i.main) refers to com.o(.data) for timeover
+    main.o(i.main) refers to music.o(.data) for Start_type
+    main.o(i.main) refers to tim.o(.data) for logov
+    main.o(i.main) refers to usart485.o(.data) for GuoBiao_mod
+    main.o(i.main) refers to led.o(.data) for temp
+    main.o(i.main) refers to com.o(.bss) for car_stat
+    main.o(i.main) refers to usart485.o(.data) for R_mod
+    main.o(i.main) refers to key.o(.data) for card_learn
+    main.o(i.main) refers to flash.o(.bss) for User_data
+    main.o(i.main) refers to adc.o(.data) for Soc_tmp
+    main.o(i.main) refers to flash.o(.data) for ODO_lc
+    main.o(i.main) refers to main.o(i.time_cout) for time_cout
+    main.o(i.main) refers to nfc522.o(i.nfc_loop) for nfc_loop
+    main.o(i.main) refers to led.o(i.led_step) for led_step
+    main.o(i.main) refers to key.o(i.key_task_10ms) for key_task_10ms
+    main.o(i.main) refers to tim.o(i.chage_pwm) for chage_pwm
+    main.o(i.main) refers to usart485.o(i.recv_deal) for recv_deal
+    main.o(i.run_cartoon) refers to uidiv.o(.text) for __aeabi_uidivmod
+    main.o(i.run_cartoon) refers to com.o(.data) for Speed
+    main.o(i.run_cartoon) refers to main.o(.data) for .data
+    main.o(i.run_cartoon) refers to led.o(.bss) for Led_data
+    main.o(i.show_Rmod) refers to led.o(.bss) for Led2_data
+    main.o(i.startDisplay) refers to uidiv.o(.text) for __aeabi_uidivmod
+    main.o(i.startDisplay) refers to main.o(.data) for .data
+    main.o(i.startDisplay) refers to led.o(.bss) for Led_data
+    main.o(i.start_cout) refers to led.o(i.show_speed) for show_speed
+    main.o(i.start_cout) refers to led.o(i.show_gear) for show_gear
+    main.o(i.start_cout) refers to led.o(i.show_mileage) for show_mileage
+    main.o(i.start_cout) refers to led.o(i.power_level_display) for power_level_display
+    main.o(i.start_cout) refers to led.o(i.show_zuoxia2_data) for show_zuoxia2_data
+    main.o(i.start_cout) refers to led.o(i.show_zuoxia1_data) for show_zuoxia1_data
+    main.o(i.start_cout) refers to led.o(i.show_voltage) for show_voltage
+    main.o(i.start_cout) refers to main.o(.data) for .data
+    main.o(i.start_cout) refers to led.o(.bss) for Led_data
+    main.o(i.start_cout) refers to led.o(.data) for temp
+    main.o(i.start_cout) refers to usart485.o(.data) for v485
+    main.o(i.time_cout) refers to uidiv.o(.text) for __aeabi_uidivmod
+    main.o(i.time_cout) refers to main.o(.data) for .data
+    main.o(i.time_cout) refers to music.o(.data) for Start_type
+    port.o(i.gpio_init) refers to port.o(i.gpio_mode) for gpio_mode
+    port.o(i.nfc_afinit) refers to port.o(i.gpio_mode) for gpio_mode
+    tim.o(i.GTIM_IRQHandler) refers to tim.o(.data) for .data
+    com.o(i.Decoder_data) refers to com.o(.bss) for .bss
+    com.o(i.Decoder_data) refers to com.o(.data) for .data
+    com.o(i.Decoder_data) refers to main.o(.data) for cut485
+    com.o(i.Decoder_data) refers to usart485.o(.data) for GuoBiao_mod
+    com.o(i.com_task_50us) refers to com.o(i.Decoder_data) for Decoder_data
+    com.o(i.com_task_50us) refers to com.o(i.speedope) for speedope
+    com.o(i.com_task_50us) refers to flash.o(i.flash_odo_updata) for flash_odo_updata
+    com.o(i.com_task_50us) refers to com.o(.data) for .data
+    com.o(i.com_task_50us) refers to com.o(.bss) for .bss
+    com.o(i.lc_add) refers to uidiv.o(.text) for __aeabi_uidivmod
+    com.o(i.lc_add) refers to com.o(.data) for .data
+    com.o(i.lc_add) refers to flash.o(.data) for ODO_lc
+    com.o(i.speedope) refers to com.o(.data) for .data
+    fdq.o(i.elock) refers to flash.o(i.flash_sta_updata) for flash_sta_updata
+    fdq.o(i.elock) refers to music.o(.data) for Cnt_lock
+    fdq.o(i.elock) refers to music.o(.data) for Cnt_unlock
+    fdq.o(i.elock) refers to music.o(.data) for Cnt_alm_first
+    fdq.o(i.estart) refers to flash.o(i.flash_sta_updata) for flash_sta_updata
+    fdq.o(i.estart) refers to music.o(.data) for Start_type
+    fdq.o(i.estart) refers to music.o(.data) for Cnt_unlock
+    fdq.o(i.eunlock) refers to flash.o(i.flash_sta_updata) for flash_sta_updata
+    fdq.o(i.eunlock) refers to music.o(.data) for Cnt_unlock
+    key.o(i.acc_check) refers to nfc522.o(i.set_mode) for set_mode
+    key.o(i.acc_check) refers to key.o(.data) for .data
+    key.o(i.acc_check) refers to music.o(.data) for Start_type
+    key.o(i.acc_check) refers to nfc522.o(.data) for Tim_write
+    key.o(i.acc_check) refers to main.o(.data) for run_step
+    key.o(i.acc_check) refers to led.o(.bss) for Led2_data
+    key.o(i.key_task_10ms) refers to key.o(i.led_check) for led_check
+    key.o(i.key_task_10ms) refers to key.o(i.acc_check) for acc_check
+    key.o(i.key_task_10ms) refers to key.o(.data) for .data
+    key.o(i.led_check) refers to nfc522.o(.data) for Nfc_af
+    key.o(i.led_check) refers to music.o(.data) for Start_type
+    key.o(i.led_check) refers to key.o(.data) for .data
+    key.o(i.led_check) refers to main.o(.data) for run_step
+    key.o(i.led_check) refers to led.o(.bss) for Led2_data
+    key.o(i.led_check) refers to led.o(.data) for Led_level
+    key.o(i.led_check) refers to tim.o(.data) for logov
+    led.o(i.i2c2_send) refers to led.o(i.udelay) for udelay
+    led.o(i.i2c2_start) refers to led.o(i.udelay) for udelay
+    led.o(i.i2c2_stop) refers to led.o(i.udelay) for udelay
+    led.o(i.i2c_send) refers to led.o(i.udelay) for udelay
+    led.o(i.i2c_start) refers to led.o(i.udelay) for udelay
+    led.o(i.i2c_stop) refers to led.o(i.udelay) for udelay
+    led.o(i.led_step) refers to led.o(i.i2c_start) for i2c_start
+    led.o(i.led_step) refers to led.o(i.i2c_send) for i2c_send
+    led.o(i.led_step) refers to led.o(i.i2c_stop) for i2c_stop
+    led.o(i.led_step) refers to led.o(i.i2c2_start) for i2c2_start
+    led.o(i.led_step) refers to led.o(i.i2c2_send) for i2c2_send
+    led.o(i.led_step) refers to led.o(i.i2c2_stop) for i2c2_stop
+    led.o(i.led_step) refers to led.o(.bss) for .bss
+    led.o(i.led_step) refers to led.o(.data) for .data
+    led.o(i.power_level_display) refers to led.o(.bss) for .bss
+    led.o(i.show_card) refers to led.o(.bss) for .bss
+    led.o(i.show_card) refers to led.o(.data) for .data
+    led.o(i.show_gear) refers to led.o(.bss) for .bss
+    led.o(i.show_gear) refers to led.o(.data) for .data
+    led.o(i.show_mileage) refers to uidiv.o(.text) for __aeabi_uidivmod
+    led.o(i.show_mileage) refers to led.o(.bss) for .bss
+    led.o(i.show_mileage) refers to led.o(.data) for .data
+    led.o(i.show_speed) refers to uidiv.o(.text) for __aeabi_uidivmod
+    led.o(i.show_speed) refers to led.o(.bss) for .bss
+    led.o(i.show_speed) refers to led.o(.data) for .data
+    led.o(i.show_voltage) refers to uidiv.o(.text) for __aeabi_uidivmod
+    led.o(i.show_voltage) refers to led.o(.bss) for .bss
+    led.o(i.show_voltage) refers to led.o(.data) for .data
+    led.o(i.show_zuoxia1_data) refers to uidiv.o(.text) for __aeabi_uidivmod
+    led.o(i.show_zuoxia1_data) refers to led.o(.bss) for .bss
+    led.o(i.show_zuoxia1_data) refers to led.o(.data) for .data
+    led.o(i.show_zuoxia2_data) refers to uidiv.o(.text) for __aeabi_uidivmod
+    led.o(i.show_zuoxia2_data) refers to led.o(.bss) for .bss
+    led.o(i.show_zuoxia2_data) refers to led.o(.data) for .data
+    led.o(i.time_dis) refers to led.o(i.show_zuoxia2_data) for show_zuoxia2_data
+    led.o(i.time_dis) refers to led.o(i.show_zuoxia1_data) for show_zuoxia1_data
+    led.o(i.time_dis) refers to led.o(.bss) for .bss
+    led.o(i.time_dis) refers to usart485.o(.data) for min
+    music.o(i.BTIM1_IRQHandler) refers to music.o(i.music_isr) for music_isr
+    music.o(i.music_end) refers to music.o(.data) for .data
+    music.o(i.music_isr) refers to adc.o(i.__ARM_common_switch8) for __ARM_common_switch8
+    music.o(i.music_isr) refers to music.o(.data) for .data
+    music.o(i.music_isr) refers to music.o(i.music_end) for music_end
+    music.o(i.music_set) refers to music.o(i.music_end) for music_end
+    music.o(i.music_set) refers to adc.o(i.__ARM_common_switch8) for __ARM_common_switch8
+    music.o(i.music_set) refers to music.o(i.music_start) for music_start
+    music.o(i.music_set) refers to music.o(.data) for .data
+    rf.o(i.rf_task_10ms) refers to fdq.o(i.estart) for estart
+    rf.o(i.rf_task_10ms) refers to music.o(i.music_set) for music_set
+    rf.o(i.rf_task_10ms) refers to fdq.o(i.elock) for elock
+    rf.o(i.rf_task_10ms) refers to fdq.o(i.eunlock) for eunlock
+    rf.o(i.rf_task_10ms) refers to flash.o(i.flash_user_updata) for flash_user_updata
+    rf.o(i.rf_task_10ms) refers to rf.o(.data) for .data
+    rf.o(i.rf_task_10ms) refers to music.o(.data) for Cnt_unlock
+    rf.o(i.rf_task_10ms) refers to music.o(.data) for Start_type
+    rf.o(i.rf_task_10ms) refers to fdq.o(.data) for Alm_state
+    rf.o(i.rf_task_10ms) refers to flash.o(.bss) for User_data
+    rf.o(i.rf_task_50us) refers to rf.o(.data) for .data
+    nfc522.o(i.alm_cmd) refers to nfc522.o(.data) for .data
+    nfc522.o(i.alm_send) refers to nfc522.o(.data) for .data
+    nfc522.o(i.checkbak_id) refers to flash.o(.bss) for User_data
+    nfc522.o(i.clr_mask) refers to nfc522.o(i.pcd_read) for pcd_read
+    nfc522.o(i.clr_mask) refers to nfc522.o(i.pcd_write) for pcd_write
+    nfc522.o(i.find_card) refers to memseta.o(.text) for __aeabi_memclr4
+    nfc522.o(i.find_card) refers to nfc522.o(i.pcd_write) for pcd_write
+    nfc522.o(i.find_card) refers to nfc522.o(i.clr_mask) for clr_mask
+    nfc522.o(i.find_card) refers to nfc522.o(i.pcd_cmd) for pcd_cmd
+    nfc522.o(i.find_card) refers to nfc522.o(.constdata) for .constdata
+    nfc522.o(i.nfc_loop) refers to port.o(i.nfc_afinit) for nfc_afinit
+    nfc522.o(i.nfc_loop) refers to nfc522.o(i.pcd_reset) for pcd_reset
+    nfc522.o(i.nfc_loop) refers to nfc522.o(i.find_card) for find_card
+    nfc522.o(i.nfc_loop) refers to nfc522.o(i.pcd_coll) for pcd_coll
+    nfc522.o(i.nfc_loop) refers to nfc522.o(i.set_mode) for set_mode
+    nfc522.o(i.nfc_loop) refers to nfc522.o(i.sel_card) for sel_card
+    nfc522.o(i.nfc_loop) refers to nfc522.o(i.password) for password
+    nfc522.o(i.nfc_loop) refers to nfc522.o(i.pcd_wblock) for pcd_wblock
+    nfc522.o(i.nfc_loop) refers to flash.o(i.flash_user_updata) for flash_user_updata
+    nfc522.o(i.nfc_loop) refers to nfc522.o(i.checkbak_id) for checkbak_id
+    nfc522.o(i.nfc_loop) refers to nfc522.o(i.pcd_rblock) for pcd_rblock
+    nfc522.o(i.nfc_loop) refers to nfc522.o(i.alm_cmd) for alm_cmd
+    nfc522.o(i.nfc_loop) refers to nfc522.o(i.check_buf_word4) for check_buf_word4
+    nfc522.o(i.nfc_loop) refers to nfc522.o(.data) for .data
+    nfc522.o(i.nfc_loop) refers to com.o(.data) for Speed
+    nfc522.o(i.nfc_loop) refers to music.o(.data) for Start_type
+    nfc522.o(i.nfc_loop) refers to fdq.o(.data) for Alm_type
+    nfc522.o(i.nfc_loop) refers to flash.o(.bss) for User_data
+    nfc522.o(i.nfc_loop) refers to nfc522.o(.bss) for .bss
+    nfc522.o(i.password) refers to memseta.o(.text) for __aeabi_memclr4
+    nfc522.o(i.password) refers to nfc522.o(i.pcd_write) for pcd_write
+    nfc522.o(i.password) refers to nfc522.o(i.pcd_cmd) for pcd_cmd
+    nfc522.o(i.password) refers to nfc522.o(.constdata) for .constdata
+    nfc522.o(i.pcd_cmd) refers to nfc522.o(i.pcd_write) for pcd_write
+    nfc522.o(i.pcd_cmd) refers to nfc522.o(i.clr_mask) for clr_mask
+    nfc522.o(i.pcd_cmd) refers to nfc522.o(i.set_mask) for set_mask
+    nfc522.o(i.pcd_cmd) refers to nfc522.o(i.pcd_read) for pcd_read
+    nfc522.o(i.pcd_cmd) refers to nfc522.o(.data) for .data
+    nfc522.o(i.pcd_coll) refers to memseta.o(.text) for __aeabi_memclr4
+    nfc522.o(i.pcd_coll) refers to nfc522.o(i.pcd_write) for pcd_write
+    nfc522.o(i.pcd_coll) refers to nfc522.o(i.clr_mask) for clr_mask
+    nfc522.o(i.pcd_coll) refers to nfc522.o(i.pcd_cmd) for pcd_cmd
+    nfc522.o(i.pcd_coll) refers to nfc522.o(i.set_mask) for set_mask
+    nfc522.o(i.pcd_coll) refers to nfc522.o(.constdata) for .constdata
+    nfc522.o(i.pcd_coll) refers to nfc522.o(.data) for .data
+    nfc522.o(i.pcd_rblock) refers to memseta.o(.text) for __aeabi_memclr4
+    nfc522.o(i.pcd_rblock) refers to nfc522.o(i.pcd_write) for pcd_write
+    nfc522.o(i.pcd_rblock) refers to nfc522.o(i.get_crc) for get_crc
+    nfc522.o(i.pcd_rblock) refers to nfc522.o(i.pcd_cmd) for pcd_cmd
+    nfc522.o(i.pcd_rblock) refers to nfc522.o(.constdata) for .constdata
+    nfc522.o(i.pcd_read) refers to nfc522.o(i.spi_send) for spi_send
+    nfc522.o(i.pcd_reset) refers to nfc522.o(i.pcd_write) for pcd_write
+    nfc522.o(i.pcd_reset) refers to nfc522.o(i.set_mask) for set_mask
+    nfc522.o(i.pcd_wblock) refers to memseta.o(.text) for __aeabi_memclr4
+    nfc522.o(i.pcd_wblock) refers to nfc522.o(i.pcd_write) for pcd_write
+    nfc522.o(i.pcd_wblock) refers to nfc522.o(i.get_crc) for get_crc
+    nfc522.o(i.pcd_wblock) refers to nfc522.o(i.pcd_cmd) for pcd_cmd
+    nfc522.o(i.pcd_wblock) refers to nfc522.o(.constdata) for .constdata
+    nfc522.o(i.pcd_write) refers to nfc522.o(i.spi_send) for spi_send
+    nfc522.o(i.sel_card) refers to memcpya.o(.text) for __aeabi_memcpy4
+    nfc522.o(i.sel_card) refers to nfc522.o(i.pcd_write) for pcd_write
+    nfc522.o(i.sel_card) refers to nfc522.o(i.get_crc) for get_crc
+    nfc522.o(i.sel_card) refers to nfc522.o(i.clr_mask) for clr_mask
+    nfc522.o(i.sel_card) refers to nfc522.o(i.pcd_cmd) for pcd_cmd
+    nfc522.o(i.sel_card) refers to nfc522.o(.constdata) for .constdata
+    nfc522.o(i.set_mask) refers to nfc522.o(i.pcd_read) for pcd_read
+    nfc522.o(i.set_mask) refers to nfc522.o(i.pcd_write) for pcd_write
+    nfc522.o(i.set_mode) refers to nfc522.o(.data) for .data
+    nfc522.o(i.set_mode) refers to flash.o(.bss) for User_data
+    usart485.o(i.CRC16_MODBUS) refers to usart485.o(i.InvertUint8) for InvertUint8
+    usart485.o(i.CRC16_MODBUS) refers to usart485.o(i.InvertUint16) for InvertUint16
+    usart485.o(i.UART2_INIT) refers to cw32f003_gpio.o(i.GPIO_Init) for GPIO_Init
+    usart485.o(i.UART2_INIT) refers to cw32f003_uart.o(i.USART_Init) for USART_Init
+    usart485.o(i.UART2_IRQHandler) refers to usart485.o(i.recve_485) for recve_485
+    usart485.o(i.UART2_IRQHandler) refers to usart485.o(.data) for .data
+    usart485.o(i.UART2_IRQHandler) refers to usart485.o(.bss) for .bss
+    usart485.o(i.modbus_ack) refers to usart485.o(i.CRC16_MODBUS) for CRC16_MODBUS
+    usart485.o(i.modbus_ack) refers to usart485.o(.data) for .data
+    usart485.o(i.modbus_ack) refers to usart485.o(.bss) for .bss
+    usart485.o(i.recv_deal) refers to usart485.o(i.CRC16_MODBUS) for CRC16_MODBUS
+    usart485.o(i.recv_deal) refers to uidiv.o(.text) for __aeabi_uidivmod
+    usart485.o(i.recv_deal) refers to flash.o(i.flash_odo_updata) for flash_odo_updata
+    usart485.o(i.recv_deal) refers to usart485.o(i.modbus_ack) for modbus_ack
+    usart485.o(i.recv_deal) refers to usart485.o(.data) for .data
+    usart485.o(i.recv_deal) refers to main.o(.data) for cut485
+    usart485.o(i.recv_deal) refers to usart485.o(.bss) for .bss
+    usart485.o(i.recv_deal) refers to com.o(.bss) for car_stat
+    usart485.o(i.recv_deal) refers to com.o(.data) for P_STA
+    usart485.o(i.recv_deal) refers to led.o(.data) for temp
+    usart485.o(i.recv_deal) refers to flash.o(.data) for ODO_lc
+    cw32f003_uart.o(i.USART_Init) refers to ffltui.o(.text) for __aeabi_ui2f
+    cw32f003_uart.o(i.USART_Init) refers to fdiv.o(.text) for __aeabi_fdiv
+    cw32f003_uart.o(i.USART_Init) refers to ffixui.o(.text) for __aeabi_f2uiz
+    cw32f003_uart.o(i.USART_Init) refers to fadd.o(.text) for __aeabi_frsub
+    cw32f003_uart.o(i.USART_Init) refers to fscalb.o(.text) for __ARM_scalbnf
+    cw32f003_uart.o(i.USART_Init) refers to f2d.o(.text) for __aeabi_f2d
+    cw32f003_uart.o(i.USART_Init) refers to dadd.o(.text) for __aeabi_dadd
+    cw32f003_uart.o(i.USART_Init) refers to dfixui.o(.text) for __aeabi_d2uiz
+    startup_cw32f003.o(RESET) refers to startup_cw32f003.o(STACK) for __initial_sp
+    startup_cw32f003.o(RESET) refers to startup_cw32f003.o(.text) for Reset_Handler
+    startup_cw32f003.o(RESET) refers to tim.o(i.GTIM_IRQHandler) for GTIM_IRQHandler
+    startup_cw32f003.o(RESET) refers to music.o(i.BTIM1_IRQHandler) for BTIM1_IRQHandler
+    startup_cw32f003.o(RESET) refers to main.o(i.BTIM2_IRQHandler) for BTIM2_IRQHandler
+    startup_cw32f003.o(RESET) refers to usart485.o(i.UART2_IRQHandler) for UART2_IRQHandler
+    startup_cw32f003.o(.text) refers to main.o(i.SystemInit) for SystemInit
+    startup_cw32f003.o(.text) refers to entry.o(.ARM.Collect$$$$00000000) for __main
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry10a.o(.ARM.Collect$$$$0000000D) for __rt_final_cpp
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry11a.o(.ARM.Collect$$$$0000000F) for __rt_final_exit
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry7b.o(.ARM.Collect$$$$00000008) for _main_clock
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry8b.o(.ARM.Collect$$$$0000000A) for _main_cpp_init
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry9a.o(.ARM.Collect$$$$0000000B) for _main_init
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry5.o(.ARM.Collect$$$$00000004) for _main_scatterload
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry2.o(.ARM.Collect$$$$00000001) for _main_stk
+    fadd.o(.text) refers (Special) to iusefp.o(.text) for __I$use$fp
+    fadd.o(.text) refers to fepilogue.o(.text) for _float_epilogue
+    fdiv.o(.text) refers (Special) to iusefp.o(.text) for __I$use$fp
+    fdiv.o(.text) refers to fepilogue.o(.text) for _float_round
+    fscalb.o(.text) refers (Special) to iusefp.o(.text) for __I$use$fp
+    dadd.o(.text) refers (Special) to iusefp.o(.text) for __I$use$fp
+    dadd.o(.text) refers to llshl.o(.text) for __aeabi_llsl
+    dadd.o(.text) refers to llsshr.o(.text) for __aeabi_lasr
+    dadd.o(.text) refers to depilogue.o(.text) for _double_epilogue
+    ffltui.o(.text) refers (Special) to iusefp.o(.text) for __I$use$fp
+    ffltui.o(.text) refers to fepilogue.o(.text) for _float_epilogue
+    ffixui.o(.text) refers (Special) to iusefp.o(.text) for __I$use$fp
+    dfixui.o(.text) refers (Special) to iusefp.o(.text) for __I$use$fp
+    dfixui.o(.text) refers to llushr.o(.text) for __aeabi_llsr
+    f2d.o(.text) refers (Special) to iusefp.o(.text) for __I$use$fp
+    entry2.o(.ARM.Collect$$$$00000001) refers to entry2.o(.ARM.Collect$$$$00002712) for __lit__00000000
+    entry2.o(.ARM.Collect$$$$00002712) refers to startup_cw32f003.o(STACK) for __initial_sp
+    entry2.o(__vectab_stack_and_reset_area) refers to startup_cw32f003.o(STACK) for __initial_sp
+    entry2.o(__vectab_stack_and_reset_area) refers to entry.o(.ARM.Collect$$$$00000000) for __main
+    entry5.o(.ARM.Collect$$$$00000004) refers to init.o(.text) for __scatterload
+    entry9a.o(.ARM.Collect$$$$0000000B) refers to main.o(i.main) for main
+    entry9b.o(.ARM.Collect$$$$0000000C) refers to main.o(i.main) for main
+    depilogue.o(.text) refers to depilogue.o(i.__ARM_clz) for __ARM_clz
+    depilogue.o(.text) refers to llshl.o(.text) for __aeabi_llsl
+    depilogue.o(.text) refers to llushr.o(.text) for __aeabi_llsr
+    init.o(.text) refers to entry5.o(.ARM.Collect$$$$00000004) for __main_after_scatterload
+
+
+==============================================================================
+
+Removing Unused input sections from the image.
+
+    Removing adc.o(.rev16_text), (4 bytes).
+    Removing adc.o(.revsh_text), (4 bytes).
+    Removing adc.o(.data), (1 bytes).
+    Removing flash.o(.rev16_text), (4 bytes).
+    Removing flash.o(.revsh_text), (4 bytes).
+    Removing flash.o(i.flash_sta_updata), (60 bytes).
+    Removing flash.o(i.flash_write_byte), (32 bytes).
+    Removing main.o(.rev16_text), (4 bytes).
+    Removing main.o(.revsh_text), (4 bytes).
+    Removing main.o(.data), (1 bytes).
+    Removing main.o(.data), (2 bytes).
+    Removing main.o(.data), (2 bytes).
+    Removing port.o(.rev16_text), (4 bytes).
+    Removing port.o(.revsh_text), (4 bytes).
+    Removing port.o(i.gpio_clock_cl), (2 bytes).
+    Removing tim.o(.rev16_text), (4 bytes).
+    Removing tim.o(.revsh_text), (4 bytes).
+    Removing com.o(.rev16_text), (4 bytes).
+    Removing com.o(.revsh_text), (4 bytes).
+    Removing com.o(.data), (2 bytes).
+    Removing com.o(.data), (2 bytes).
+    Removing com.o(.data), (1 bytes).
+    Removing fdq.o(.rev16_text), (4 bytes).
+    Removing fdq.o(.revsh_text), (4 bytes).
+    Removing fdq.o(i.elock), (40 bytes).
+    Removing fdq.o(i.estart), (32 bytes).
+    Removing fdq.o(i.eunlock), (20 bytes).
+    Removing fdq.o(.data), (1 bytes).
+    Removing fdq.o(.data), (1 bytes).
+    Removing key.o(.rev16_text), (4 bytes).
+    Removing key.o(.revsh_text), (4 bytes).
+    Removing key.o(i.xw_check), (2 bytes).
+    Removing key.o(.data), (1 bytes).
+    Removing key.o(.data), (1 bytes).
+    Removing led.o(.rev16_text), (4 bytes).
+    Removing led.o(.revsh_text), (4 bytes).
+    Removing music.o(.rev16_text), (4 bytes).
+    Removing music.o(.revsh_text), (4 bytes).
+    Removing music.o(i.music_set), (312 bytes).
+    Removing music.o(i.music_start), (24 bytes).
+    Removing music.o(.data), (2 bytes).
+    Removing music.o(.data), (2 bytes).
+    Removing music.o(.data), (2 bytes).
+    Removing rf.o(.rev16_text), (4 bytes).
+    Removing rf.o(.revsh_text), (4 bytes).
+    Removing rf.o(i.rf_task_10ms), (364 bytes).
+    Removing rf.o(i.rf_task_50us), (184 bytes).
+    Removing nfc522.o(.rev16_text), (4 bytes).
+    Removing nfc522.o(.revsh_text), (4 bytes).
+    Removing nfc522.o(.data), (12 bytes).
+    Removing usart485.o(.rev16_text), (4 bytes).
+    Removing usart485.o(.revsh_text), (4 bytes).
+    Removing usart485.o(i.send_485), (12 bytes).
+    Removing usart485.o(.data), (2 bytes).
+    Removing cw32f003_gpio.o(.rev16_text), (4 bytes).
+    Removing cw32f003_gpio.o(.revsh_text), (4 bytes).
+    Removing cw32f003_gpio.o(i.GPIO_ConfigFilter), (6 bytes).
+    Removing cw32f003_gpio.o(i.GPIO_DeInit), (56 bytes).
+    Removing cw32f003_gpio.o(i.GPIO_GPIO2NRST), (24 bytes).
+    Removing cw32f003_gpio.o(i.GPIO_GPIO2SWD), (24 bytes).
+    Removing cw32f003_gpio.o(i.GPIO_NRST2GPIO), (20 bytes).
+    Removing cw32f003_gpio.o(i.GPIO_ReadPin), (10 bytes).
+    Removing cw32f003_gpio.o(i.GPIO_SWD2GPIO), (20 bytes).
+    Removing cw32f003_gpio.o(i.GPIO_TogglePin), (4 bytes).
+    Removing cw32f003_gpio.o(i.GPIO_WritePin), (12 bytes).
+    Removing cw32f003_uart.o(.rev16_text), (4 bytes).
+    Removing cw32f003_uart.o(.revsh_text), (4 bytes).
+    Removing cw32f003_uart.o(i.UART1_DeInit), (24 bytes).
+    Removing cw32f003_uart.o(i.UART2_DeInit), (24 bytes).
+    Removing cw32f003_uart.o(i.USART_ClearFlag), (8 bytes).
+    Removing cw32f003_uart.o(i.USART_ClearITPendingBit), (8 bytes).
+    Removing cw32f003_uart.o(i.USART_ClockInit), (28 bytes).
+    Removing cw32f003_uart.o(i.USART_ClockStructInit), (8 bytes).
+    Removing cw32f003_uart.o(i.USART_GetFlagStatus), (10 bytes).
+    Removing cw32f003_uart.o(i.USART_GetITStatus), (10 bytes).
+    Removing cw32f003_uart.o(i.USART_ITConfig), (20 bytes).
+    Removing cw32f003_uart.o(i.USART_ReceiveData), (8 bytes).
+    Removing cw32f003_uart.o(i.USART_ReceiveData_8bit), (6 bytes).
+    Removing cw32f003_uart.o(i.USART_SendData), (8 bytes).
+    Removing cw32f003_uart.o(i.USART_SendData_8bit), (4 bytes).
+    Removing cw32f003_uart.o(i.USART_StructInit), (26 bytes).
+    Removing startup_cw32f003.o(HEAP), (512 bytes).
+
+82 unused section(s) (total 2119 bytes) removed from the image.
+
+==============================================================================
+
+Image Symbol Table
+
+    Local Symbols
+
+    Symbol Name                              Value     Ov Type        Size  Object(Section)
+
+    ../clib/../cmprslib/zerorunl.c           0x00000000   Number         0  __dczerorl.o ABSOLUTE
+    ../clib/microlib/division.c              0x00000000   Number         0  uidiv.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry10a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry7b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry7a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry9a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry11b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry5.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry11a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry10b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry2.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry8b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry9b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry8a.o ABSOLUTE
+    ../clib/microlib/longlong.c              0x00000000   Number         0  llushr.o ABSOLUTE
+    ../clib/microlib/longlong.c              0x00000000   Number         0  llsshr.o ABSOLUTE
+    ../clib/microlib/longlong.c              0x00000000   Number         0  llshl.o ABSOLUTE
+    ../clib/microlib/string/memcpy.c         0x00000000   Number         0  memcpyb.o ABSOLUTE
+    ../clib/microlib/string/memcpy.c         0x00000000   Number         0  memcpya.o ABSOLUTE
+    ../clib/microlib/string/memset.c         0x00000000   Number         0  memseta.o ABSOLUTE
+    ../clib/microlib/stubs.s                 0x00000000   Number         0  iusefp.o ABSOLUTE
+    ../fplib/microlib/f2d.c                  0x00000000   Number         0  f2d.o ABSOLUTE
+    ../fplib/microlib/fpadd.c                0x00000000   Number         0  fadd.o ABSOLUTE
+    ../fplib/microlib/fpadd.c                0x00000000   Number         0  dadd.o ABSOLUTE
+    ../fplib/microlib/fpdiv.c                0x00000000   Number         0  fdiv.o ABSOLUTE
+    ../fplib/microlib/fpepilogue.c           0x00000000   Number         0  depilogue.o ABSOLUTE
+    ../fplib/microlib/fpepilogue.c           0x00000000   Number         0  fepilogue.o ABSOLUTE
+    ../fplib/microlib/fpfix.c                0x00000000   Number         0  dfixui.o ABSOLUTE
+    ../fplib/microlib/fpfix.c                0x00000000   Number         0  ffixui.o ABSOLUTE
+    ../fplib/microlib/fpflt.c                0x00000000   Number         0  ffltui.o ABSOLUTE
+    ../fplib/microlib/fpscalb.c              0x00000000   Number         0  fscalb.o ABSOLUTE
+    Core\startup_cw32f003.s                  0x00000000   Number         0  startup_cw32f003.o ABSOLUTE
+    Src\\adc.c                               0x00000000   Number         0  adc.o ABSOLUTE
+    Src\\com.c                               0x00000000   Number         0  com.o ABSOLUTE
+    Src\\cw32f003_gpio.c                     0x00000000   Number         0  cw32f003_gpio.o ABSOLUTE
+    Src\\cw32f003_uart.c                     0x00000000   Number         0  cw32f003_uart.o ABSOLUTE
+    Src\\fdq.c                               0x00000000   Number         0  fdq.o ABSOLUTE
+    Src\\flash.c                             0x00000000   Number         0  flash.o ABSOLUTE
+    Src\\key.c                               0x00000000   Number         0  key.o ABSOLUTE
+    Src\\led.c                               0x00000000   Number         0  led.o ABSOLUTE
+    Src\\main.c                              0x00000000   Number         0  main.o ABSOLUTE
+    Src\\music.c                             0x00000000   Number         0  music.o ABSOLUTE
+    Src\\nfc522.c                            0x00000000   Number         0  nfc522.o ABSOLUTE
+    Src\\port.c                              0x00000000   Number         0  port.o ABSOLUTE
+    Src\\rf.c                                0x00000000   Number         0  rf.o ABSOLUTE
+    Src\\tim.c                               0x00000000   Number         0  tim.o ABSOLUTE
+    Src\adc.c                                0x00000000   Number         0  adc.o ABSOLUTE
+    Src\com.c                                0x00000000   Number         0  com.o ABSOLUTE
+    Src\cw32f003_gpio.c                      0x00000000   Number         0  cw32f003_gpio.o ABSOLUTE
+    Src\cw32f003_uart.c                      0x00000000   Number         0  cw32f003_uart.o ABSOLUTE
+    Src\fdq.c                                0x00000000   Number         0  fdq.o ABSOLUTE
+    Src\flash.c                              0x00000000   Number         0  flash.o ABSOLUTE
+    Src\key.c                                0x00000000   Number         0  key.o ABSOLUTE
+    Src\led.c                                0x00000000   Number         0  led.o ABSOLUTE
+    Src\main.c                               0x00000000   Number         0  main.o ABSOLUTE
+    Src\music.c                              0x00000000   Number         0  music.o ABSOLUTE
+    Src\nfc522.c                             0x00000000   Number         0  nfc522.o ABSOLUTE
+    Src\port.c                               0x00000000   Number         0  port.o ABSOLUTE
+    Src\rf.c                                 0x00000000   Number         0  rf.o ABSOLUTE
+    Src\tim.c                                0x00000000   Number         0  tim.o ABSOLUTE
+    USART485.c                               0x00000000   Number         0  usart485.o ABSOLUTE
+    USART485.c                               0x00000000   Number         0  usart485.o ABSOLUTE
+    dc.s                                     0x00000000   Number         0  dc.o ABSOLUTE
+    handlers.s                               0x00000000   Number         0  handlers.o ABSOLUTE
+    init.s                                   0x00000000   Number         0  init.o ABSOLUTE
+    RESET                                    0x00000800   Section      192  startup_cw32f003.o(RESET)
+    .ARM.Collect$$$$00000000                 0x000008c0   Section        0  entry.o(.ARM.Collect$$$$00000000)
+    .ARM.Collect$$$$00000001                 0x000008c0   Section        4  entry2.o(.ARM.Collect$$$$00000001)
+    .ARM.Collect$$$$00000004                 0x000008c4   Section        4  entry5.o(.ARM.Collect$$$$00000004)
+    .ARM.Collect$$$$00000008                 0x000008c8   Section        0  entry7b.o(.ARM.Collect$$$$00000008)
+    .ARM.Collect$$$$0000000A                 0x000008c8   Section        0  entry8b.o(.ARM.Collect$$$$0000000A)
+    .ARM.Collect$$$$0000000B                 0x000008c8   Section        8  entry9a.o(.ARM.Collect$$$$0000000B)
+    .ARM.Collect$$$$0000000D                 0x000008d0   Section        0  entry10a.o(.ARM.Collect$$$$0000000D)
+    .ARM.Collect$$$$0000000F                 0x000008d0   Section        0  entry11a.o(.ARM.Collect$$$$0000000F)
+    .ARM.Collect$$$$00002712                 0x000008d0   Section        4  entry2.o(.ARM.Collect$$$$00002712)
+    __lit__00000000                          0x000008d0   Data           4  entry2.o(.ARM.Collect$$$$00002712)
+    .text                                    0x000008d4   Section       60  startup_cw32f003.o(.text)
+    .text                                    0x00000910   Section        0  uidiv.o(.text)
+    .text                                    0x0000093c   Section        0  memcpya.o(.text)
+    .text                                    0x00000960   Section        0  memseta.o(.text)
+    .text                                    0x00000984   Section        0  fadd.o(.text)
+    .text                                    0x00000a36   Section        0  fdiv.o(.text)
+    .text                                    0x00000ab2   Section        0  fscalb.o(.text)
+    .text                                    0x00000acc   Section        0  dadd.o(.text)
+    .text                                    0x00000c30   Section        0  ffltui.o(.text)
+    .text                                    0x00000c3e   Section        0  ffixui.o(.text)
+    .text                                    0x00000c68   Section        0  dfixui.o(.text)
+    .text                                    0x00000ca4   Section        0  f2d.o(.text)
+    .text                                    0x00000ccc   Section        0  llshl.o(.text)
+    .text                                    0x00000cec   Section        0  llushr.o(.text)
+    .text                                    0x00000d0e   Section        0  llsshr.o(.text)
+    .text                                    0x00000d34   Section        0  fepilogue.o(.text)
+    .text                                    0x00000d34   Section        0  iusefp.o(.text)
+    .text                                    0x00000db6   Section        0  depilogue.o(.text)
+    .text                                    0x00000e74   Section       36  init.o(.text)
+    .text                                    0x00000e98   Section        0  __dczerorl.o(.text)
+    i.BTIM1_IRQHandler                       0x00000ed4   Section        0  music.o(i.BTIM1_IRQHandler)
+    i.BTIM2_IRQHandler                       0x00000eec   Section        0  main.o(i.BTIM2_IRQHandler)
+    i.CRC16_MODBUS                           0x00000f88   Section        0  usart485.o(i.CRC16_MODBUS)
+    i.Decoder_data                           0x00000fe8   Section        0  com.o(i.Decoder_data)
+    i.GPIO_Init                              0x00001098   Section        0  cw32f003_gpio.o(i.GPIO_Init)
+    i.GTIM_INIT                              0x00001164   Section        0  tim.o(i.GTIM_INIT)
+    i.GTIM_IRQHandler                        0x000011dc   Section        0  tim.o(i.GTIM_IRQHandler)
+    i.InvertUint16                           0x000011fc   Section        0  usart485.o(i.InvertUint16)
+    i.InvertUint8                            0x00001230   Section        0  usart485.o(i.InvertUint8)
+    i.SystemInit                             0x00001264   Section        0  main.o(i.SystemInit)
+    i.UART2_INIT                             0x000012c4   Section        0  usart485.o(i.UART2_INIT)
+    i.UART2_IRQHandler                       0x0000136c   Section        0  usart485.o(i.UART2_IRQHandler)
+    i.USART_Init                             0x000013e8   Section        0  cw32f003_uart.o(i.USART_Init)
+    i.__ARM_clz                              0x000014cc   Section        0  depilogue.o(i.__ARM_clz)
+    i.__ARM_common_switch8                   0x000014fa   Section        0  adc.o(i.__ARM_common_switch8)
+    i.__scatterload_copy                     0x00001514   Section       14  handlers.o(i.__scatterload_copy)
+    i.__scatterload_null                     0x00001522   Section        2  handlers.o(i.__scatterload_null)
+    i.__scatterload_zeroinit                 0x00001524   Section       14  handlers.o(i.__scatterload_zeroinit)
+    i.acc_check                              0x00001534   Section        0  key.o(i.acc_check)
+    i.adc_check                              0x00001628   Section        0  adc.o(i.adc_check)
+    i.adc_init                               0x00001958   Section        0  adc.o(i.adc_init)
+    i.alm_cmd                                0x00001988   Section        0  nfc522.o(i.alm_cmd)
+    i.alm_send                               0x000019a0   Section        0  nfc522.o(i.alm_send)
+    i.car_stat_updata                        0x00001a6c   Section        0  main.o(i.car_stat_updata)
+    i.chage_pwm                              0x00001b8c   Section        0  tim.o(i.chage_pwm)
+    i.check_buf_word4                        0x00001b98   Section        0  nfc522.o(i.check_buf_word4)
+    i.checkbak_id                            0x00001bb8   Section        0  nfc522.o(i.checkbak_id)
+    i.clr_mask                               0x00001c00   Section        0  nfc522.o(i.clr_mask)
+    i.com_task_50us                          0x00001c1c   Section        0  com.o(i.com_task_50us)
+    i.find_card                              0x00001cdc   Section        0  nfc522.o(i.find_card)
+    i.flash_adc_updata                       0x00001d40   Section        0  flash.o(i.flash_adc_updata)
+    i.flash_earse                            0x00001d74   Section        0  flash.o(i.flash_earse)
+    i.flash_init                             0x00001d94   Section        0  flash.o(i.flash_init)
+    i.flash_odo_updata                       0x00001e40   Section        0  flash.o(i.flash_odo_updata)
+    i.flash_user_updata                      0x00001e90   Section        0  flash.o(i.flash_user_updata)
+    i.flash_write_word                       0x00001eac   Section        0  flash.o(i.flash_write_word)
+    i.get_crc                                0x00001ee0   Section        0  nfc522.o(i.get_crc)
+    i.gpio_init                              0x00001f18   Section        0  port.o(i.gpio_init)
+    i.gpio_mode                              0x00001fbc   Section        0  port.o(i.gpio_mode)
+    i.i2c2_send                              0x00002020   Section        0  led.o(i.i2c2_send)
+    i.i2c2_start                             0x0000207c   Section        0  led.o(i.i2c2_start)
+    i.i2c2_stop                              0x000020b4   Section        0  led.o(i.i2c2_stop)
+    i.i2c_send                               0x000020e4   Section        0  led.o(i.i2c_send)
+    i.i2c_start                              0x00002140   Section        0  led.o(i.i2c_start)
+    i.i2c_stop                               0x00002178   Section        0  led.o(i.i2c_stop)
+    i.key_task_10ms                          0x000021a8   Section        0  key.o(i.key_task_10ms)
+    i.lc_add                                 0x000021c4   Section        0  com.o(i.lc_add)
+    i.led_check                              0x0000227c   Section        0  key.o(i.led_check)
+    i.led_step                               0x00002390   Section        0  led.o(i.led_step)
+    i.main                                   0x00002478   Section        0  main.o(i.main)
+    i.modbus_ack                             0x000029ac   Section        0  usart485.o(i.modbus_ack)
+    i.music_end                              0x00002a08   Section        0  music.o(i.music_end)
+    i.music_isr                              0x00002a30   Section        0  music.o(i.music_isr)
+    i.nfc_afinit                             0x00002e78   Section        0  port.o(i.nfc_afinit)
+    i.nfc_loop                               0x00002ecc   Section        0  nfc522.o(i.nfc_loop)
+    i.password                               0x000030d8   Section        0  nfc522.o(i.password)
+    i.pcd_cmd                                0x0000312c   Section        0  nfc522.o(i.pcd_cmd)
+    i.pcd_coll                               0x00003250   Section        0  nfc522.o(i.pcd_coll)
+    i.pcd_rblock                             0x000032d0   Section        0  nfc522.o(i.pcd_rblock)
+    i.pcd_read                               0x00003334   Section        0  nfc522.o(i.pcd_read)
+    i.pcd_reset                              0x00003394   Section        0  nfc522.o(i.pcd_reset)
+    i.pcd_wblock                             0x000033d8   Section        0  nfc522.o(i.pcd_wblock)
+    i.pcd_write                              0x00003470   Section        0  nfc522.o(i.pcd_write)
+    i.power_level_display                    0x000034a8   Section        0  led.o(i.power_level_display)
+    i.quake_check                            0x000034ec   Section        0  key.o(i.quake_check)
+    i.recv_deal                              0x000034f0   Section        0  usart485.o(i.recv_deal)
+    i.recve_485                              0x00003764   Section        0  usart485.o(i.recve_485)
+    i.run_cartoon                            0x00003770   Section        0  main.o(i.run_cartoon)
+    i.sel_card                               0x00003810   Section        0  nfc522.o(i.sel_card)
+    i.set_mask                               0x00003874   Section        0  nfc522.o(i.set_mask)
+    i.set_mode                               0x0000388c   Section        0  nfc522.o(i.set_mode)
+    i.show_Rmod                              0x000038a8   Section        0  main.o(i.show_Rmod)
+    i.show_card                              0x000038d8   Section        0  led.o(i.show_card)
+    i.show_gear                              0x00003914   Section        0  led.o(i.show_gear)
+    i.show_mileage                           0x00003930   Section        0  led.o(i.show_mileage)
+    i.show_speed                             0x00003a30   Section        0  led.o(i.show_speed)
+    i.show_voltage                           0x00003a80   Section        0  led.o(i.show_voltage)
+    i.show_zuoxia1_data                      0x00003b2c   Section        0  led.o(i.show_zuoxia1_data)
+    i.show_zuoxia2_data                      0x00003b68   Section        0  led.o(i.show_zuoxia2_data)
+    i.speedope                               0x00003be4   Section        0  com.o(i.speedope)
+    i.spi_send                               0x00003c04   Section        0  nfc522.o(i.spi_send)
+    i.startDisplay                           0x00003c3c   Section        0  main.o(i.startDisplay)
+    i.start_cout                             0x00003db4   Section        0  main.o(i.start_cout)
+    i.tim_init                               0x00003f30   Section        0  tim.o(i.tim_init)
+    i.time_cout                              0x00003f74   Section        0  main.o(i.time_cout)
+    i.time_dis                               0x00004000   Section        0  led.o(i.time_dis)
+    i.udelay                                 0x00004054   Section        0  led.o(i.udelay)
+    i.wdt_init                               0x00004060   Section        0  main.o(i.wdt_init)
+    .constdata                               0x00004070   Section       54  adc.o(.constdata)
+    .constdata                               0x000040a8   Section       38  nfc522.o(.constdata)
+    .data                                    0x20000000   Section       28  adc.o(.data)
+    cnt_timh                                 0x20000004   Data           2  adc.o(.data)
+    cnt_timl                                 0x20000006   Data           2  adc.o(.data)
+    cnt                                      0x20000008   Data           2  adc.o(.data)
+    first                                    0x2000000a   Data           2  adc.o(.data)
+    adc_lev                                  0x20000014   Data           4  adc.o(.data)
+    adc_t                                    0x20000018   Data           4  adc.o(.data)
+    .data                                    0x2000001c   Section       12  flash.o(.data)
+    .data                                    0x20000028   Section       32  main.o(.data)
+    yxtcut                                   0x2000002c   Data           1  main.o(.data)
+    tcs_cut                                  0x2000002d   Data           1  main.o(.data)
+    .data                                    0x20000048   Section        2  tim.o(.data)
+    .data                                    0x2000004c   Section       28  com.o(.data)
+    check                                    0x20000050   Data           1  com.o(.data)
+    lc_t                                     0x2000005e   Data           2  com.o(.data)
+    rf_io                                    0x20000064   Data           4  com.o(.data)
+    .data                                    0x20000068   Section        2  com.o(.data)
+    .data                                    0x2000006a   Section        1  com.o(.data)
+    .data                                    0x2000006b   Section        1  fdq.o(.data)
+    .data                                    0x2000006c   Section       60  key.o(.data)
+    cnt_up                                   0x2000007c   Data           4  key.o(.data)
+    cnt_long                                 0x20000080   Data           4  key.o(.data)
+    zz_flag                                  0x20000084   Data           4  key.o(.data)
+    zzl_cut                                  0x20000088   Data           4  key.o(.data)
+    cnt_longzz                               0x2000008c   Data           4  key.o(.data)
+    cnt_upyz                                 0x20000090   Data           4  key.o(.data)
+    cnt_longyz                               0x20000094   Data           4  key.o(.data)
+    cnt_upskd                                0x20000098   Data           4  key.o(.data)
+    cnt_longskd                              0x2000009c   Data           4  key.o(.data)
+    cnt_updd                                 0x200000a0   Data           4  key.o(.data)
+    cnt_longdd                               0x200000a4   Data           4  key.o(.data)
+    .data                                    0x200000a8   Section       12  led.o(.data)
+    Nmb_buf                                  0x200000aa   Data          10  led.o(.data)
+    .data                                    0x200000b4   Section        4  led.o(.data)
+    .data                                    0x200000b8   Section       16  music.o(.data)
+    .data                                    0x200000c8   Section       32  rf.o(.data)
+    rf_long                                  0x200000ca   Data           1  rf.o(.data)
+    cnt_rf_long                              0x200000cc   Data           2  rf.o(.data)
+    cnt_first                                0x200000ce   Data           2  rf.o(.data)
+    rf_data                                  0x200000d8   Data           4  rf.o(.data)
+    rf_io                                    0x200000dc   Data           4  rf.o(.data)
+    .data                                    0x200000e8   Section       38  nfc522.o(.data)
+    bit                                      0x200000ee   Data           1  nfc522.o(.data)
+    byte                                     0x200000ef   Data           1  nfc522.o(.data)
+    step2                                    0x200000f0   Data           1  nfc522.o(.data)
+    step                                     0x200000f1   Data           1  nfc522.o(.data)
+    leave                                    0x200000f2   Data           1  nfc522.o(.data)
+    cnt_ontim                                0x200000f3   Data           1  nfc522.o(.data)
+    card_type                                0x200000f4   Data           1  nfc522.o(.data)
+    s_s                                      0x200000f5   Data           1  nfc522.o(.data)
+    tim                                      0x200000f8   Data           2  nfc522.o(.data)
+    p                                        0x20000104   Data           4  nfc522.o(.data)
+    .data                                    0x2000010e   Section       26  usart485.o(.data)
+    .data                                    0x20000128   Section        1  usart485.o(.data)
+    .bss                                     0x2000012c   Section       64  flash.o(.bss)
+    .bss                                     0x2000016c   Section       40  com.o(.bss)
+    data                                     0x2000016c   Data          14  com.o(.bss)
+    .bss                                     0x20000194   Section       32  led.o(.bss)
+    .bss                                     0x200001b4   Section       12  nfc522.o(.bss)
+    .bss                                     0x200001c0   Section       63  usart485.o(.bss)
+    STACK                                    0x20000200   Section      512  startup_cw32f003.o(STACK)
+
+    Global Symbols
+
+    Symbol Name                              Value     Ov Type        Size  Object(Section)
+
+    BuildAttributes$$THM_ISAv3M$S$PE$A:L22$X:L11$S22$IEEE1$IW$USESV6$~STKCKD$USESV7$~SHL$OTIME$ROPI$EBA8$MICROLIB$REQ8$PRES8$EABIv2 0x00000000   Number         0  anon$$obj.o ABSOLUTE
+    __ARM_use_no_argv                        0x00000000   Number         0  main.o ABSOLUTE
+    __cpp_initialize__aeabi_                  - Undefined Weak Reference
+    __cxa_finalize                            - Undefined Weak Reference
+    _clock_init                               - Undefined Weak Reference
+    _microlib_exit                            - Undefined Weak Reference
+    __Vectors_Size                           0x000000c0   Number         0  startup_cw32f003.o ABSOLUTE
+    __Vectors                                0x00000800   Data           0  startup_cw32f003.o(RESET)
+    __Vectors_End                            0x000008c0   Data           0  startup_cw32f003.o(RESET)
+    __main                                   0x000008c1   Thumb Code     0  entry.o(.ARM.Collect$$$$00000000)
+    _main_stk                                0x000008c1   Thumb Code     0  entry2.o(.ARM.Collect$$$$00000001)
+    _main_scatterload                        0x000008c5   Thumb Code     0  entry5.o(.ARM.Collect$$$$00000004)
+    __main_after_scatterload                 0x000008c9   Thumb Code     0  entry5.o(.ARM.Collect$$$$00000004)
+    _main_clock                              0x000008c9   Thumb Code     0  entry7b.o(.ARM.Collect$$$$00000008)
+    _main_cpp_init                           0x000008c9   Thumb Code     0  entry8b.o(.ARM.Collect$$$$0000000A)
+    _main_init                               0x000008c9   Thumb Code     0  entry9a.o(.ARM.Collect$$$$0000000B)
+    __rt_final_cpp                           0x000008d1   Thumb Code     0  entry10a.o(.ARM.Collect$$$$0000000D)
+    __rt_final_exit                          0x000008d1   Thumb Code     0  entry11a.o(.ARM.Collect$$$$0000000F)
+    Reset_Handler                            0x000008d5   Thumb Code    26  startup_cw32f003.o(.text)
+    NMI_Handler                              0x000008ef   Thumb Code     2  startup_cw32f003.o(.text)
+    HardFault_Handler                        0x000008f1   Thumb Code     2  startup_cw32f003.o(.text)
+    SVC_Handler                              0x000008f3   Thumb Code     2  startup_cw32f003.o(.text)
+    PendSV_Handler                           0x000008f5   Thumb Code     2  startup_cw32f003.o(.text)
+    SysTick_Handler                          0x000008f7   Thumb Code     2  startup_cw32f003.o(.text)
+    ADC_IRQHandler                           0x000008f9   Thumb Code     0  startup_cw32f003.o(.text)
+    ATIM_IRQHandler                          0x000008f9   Thumb Code     0  startup_cw32f003.o(.text)
+    AWT_IRQHandler                           0x000008f9   Thumb Code     0  startup_cw32f003.o(.text)
+    BTIM3_IRQHandler                         0x000008f9   Thumb Code     0  startup_cw32f003.o(.text)
+    FLASHRAM_IRQHandler                      0x000008f9   Thumb Code     0  startup_cw32f003.o(.text)
+    GPIOA_IRQHandler                         0x000008f9   Thumb Code     0  startup_cw32f003.o(.text)
+    GPIOB_IRQHandler                         0x000008f9   Thumb Code     0  startup_cw32f003.o(.text)
+    GPIOC_IRQHandler                         0x000008f9   Thumb Code     0  startup_cw32f003.o(.text)
+    I2C_IRQHandler                           0x000008f9   Thumb Code     0  startup_cw32f003.o(.text)
+    LVD_IRQHandler                           0x000008f9   Thumb Code     0  startup_cw32f003.o(.text)
+    SPI_IRQHandler                           0x000008f9   Thumb Code     0  startup_cw32f003.o(.text)
+    SYSCTRL_IRQHandler                       0x000008f9   Thumb Code     0  startup_cw32f003.o(.text)
+    UART1_IRQHandler                         0x000008f9   Thumb Code     0  startup_cw32f003.o(.text)
+    VC1_IRQHandler                           0x000008f9   Thumb Code     0  startup_cw32f003.o(.text)
+    VC2_IRQHandler                           0x000008f9   Thumb Code     0  startup_cw32f003.o(.text)
+    WDT_IRQHandler                           0x000008f9   Thumb Code     0  startup_cw32f003.o(.text)
+    __aeabi_uidiv                            0x00000911   Thumb Code     0  uidiv.o(.text)
+    __aeabi_uidivmod                         0x00000911   Thumb Code    44  uidiv.o(.text)
+    __aeabi_memcpy                           0x0000093d   Thumb Code    36  memcpya.o(.text)
+    __aeabi_memcpy4                          0x0000093d   Thumb Code     0  memcpya.o(.text)
+    __aeabi_memcpy8                          0x0000093d   Thumb Code     0  memcpya.o(.text)
+    __aeabi_memset                           0x00000961   Thumb Code    14  memseta.o(.text)
+    __aeabi_memset4                          0x00000961   Thumb Code     0  memseta.o(.text)
+    __aeabi_memset8                          0x00000961   Thumb Code     0  memseta.o(.text)
+    __aeabi_memclr                           0x0000096f   Thumb Code     4  memseta.o(.text)
+    __aeabi_memclr4                          0x0000096f   Thumb Code     0  memseta.o(.text)
+    __aeabi_memclr8                          0x0000096f   Thumb Code     0  memseta.o(.text)
+    _memset$wrapper                          0x00000973   Thumb Code    18  memseta.o(.text)
+    __aeabi_fadd                             0x00000985   Thumb Code   162  fadd.o(.text)
+    __aeabi_fsub                             0x00000a27   Thumb Code     8  fadd.o(.text)
+    __aeabi_frsub                            0x00000a2f   Thumb Code     8  fadd.o(.text)
+    __aeabi_fdiv                             0x00000a37   Thumb Code   124  fdiv.o(.text)
+    __ARM_scalbnf                            0x00000ab3   Thumb Code    24  fscalb.o(.text)
+    scalbnf                                  0x00000ab3   Thumb Code     0  fscalb.o(.text)
+    __aeabi_dadd                             0x00000acd   Thumb Code   328  dadd.o(.text)
+    __aeabi_dsub                             0x00000c15   Thumb Code    12  dadd.o(.text)
+    __aeabi_drsub                            0x00000c21   Thumb Code    12  dadd.o(.text)
+    __aeabi_ui2f                             0x00000c31   Thumb Code    14  ffltui.o(.text)
+    __aeabi_f2uiz                            0x00000c3f   Thumb Code    40  ffixui.o(.text)
+    __aeabi_d2uiz                            0x00000c69   Thumb Code    50  dfixui.o(.text)
+    __aeabi_f2d                              0x00000ca5   Thumb Code    40  f2d.o(.text)
+    __aeabi_llsl                             0x00000ccd   Thumb Code    32  llshl.o(.text)
+    _ll_shift_l                              0x00000ccd   Thumb Code     0  llshl.o(.text)
+    __aeabi_llsr                             0x00000ced   Thumb Code    34  llushr.o(.text)
+    _ll_ushift_r                             0x00000ced   Thumb Code     0  llushr.o(.text)
+    __aeabi_lasr                             0x00000d0f   Thumb Code    38  llsshr.o(.text)
+    _ll_sshift_r                             0x00000d0f   Thumb Code     0  llsshr.o(.text)
+    __I$use$fp                               0x00000d35   Thumb Code     0  iusefp.o(.text)
+    _float_round                             0x00000d35   Thumb Code    16  fepilogue.o(.text)
+    _float_epilogue                          0x00000d45   Thumb Code   114  fepilogue.o(.text)
+    _double_round                            0x00000db7   Thumb Code    26  depilogue.o(.text)
+    _double_epilogue                         0x00000dd1   Thumb Code   164  depilogue.o(.text)
+    __scatterload                            0x00000e75   Thumb Code    28  init.o(.text)
+    __scatterload_rt2                        0x00000e75   Thumb Code     0  init.o(.text)
+    __decompress                             0x00000e99   Thumb Code     0  __dczerorl.o(.text)
+    __decompress0                            0x00000e99   Thumb Code    58  __dczerorl.o(.text)
+    BTIM1_IRQHandler                         0x00000ed5   Thumb Code    18  music.o(i.BTIM1_IRQHandler)
+    BTIM2_IRQHandler                         0x00000eed   Thumb Code   122  main.o(i.BTIM2_IRQHandler)
+    CRC16_MODBUS                             0x00000f89   Thumb Code    92  usart485.o(i.CRC16_MODBUS)
+    Decoder_data                             0x00000fe9   Thumb Code   158  com.o(i.Decoder_data)
+    GPIO_Init                                0x00001099   Thumb Code   204  cw32f003_gpio.o(i.GPIO_Init)
+    GTIM_INIT                                0x00001165   Thumb Code   108  tim.o(i.GTIM_INIT)
+    GTIM_IRQHandler                          0x000011dd   Thumb Code    24  tim.o(i.GTIM_IRQHandler)
+    InvertUint16                             0x000011fd   Thumb Code    52  usart485.o(i.InvertUint16)
+    InvertUint8                              0x00001231   Thumb Code    52  usart485.o(i.InvertUint8)
+    SystemInit                               0x00001265   Thumb Code    80  main.o(i.SystemInit)
+    UART2_INIT                               0x000012c5   Thumb Code   144  usart485.o(i.UART2_INIT)
+    UART2_IRQHandler                         0x0000136d   Thumb Code   108  usart485.o(i.UART2_IRQHandler)
+    USART_Init                               0x000013e9   Thumb Code   218  cw32f003_uart.o(i.USART_Init)
+    __ARM_clz                                0x000014cd   Thumb Code    46  depilogue.o(i.__ARM_clz)
+    __ARM_common_switch8                     0x000014fb   Thumb Code    26  adc.o(i.__ARM_common_switch8)
+    __scatterload_copy                       0x00001515   Thumb Code    14  handlers.o(i.__scatterload_copy)
+    __scatterload_null                       0x00001523   Thumb Code     2  handlers.o(i.__scatterload_null)
+    __scatterload_zeroinit                   0x00001525   Thumb Code    14  handlers.o(i.__scatterload_zeroinit)
+    acc_check                                0x00001535   Thumb Code   216  key.o(i.acc_check)
+    adc_check                                0x00001629   Thumb Code   766  adc.o(i.adc_check)
+    adc_init                                 0x00001959   Thumb Code    44  adc.o(i.adc_init)
+    alm_cmd                                  0x00001989   Thumb Code    18  nfc522.o(i.alm_cmd)
+    alm_send                                 0x000019a1   Thumb Code   196  nfc522.o(i.alm_send)
+    car_stat_updata                          0x00001a6d   Thumb Code   260  main.o(i.car_stat_updata)
+    chage_pwm                                0x00001b8d   Thumb Code     6  tim.o(i.chage_pwm)
+    check_buf_word4                          0x00001b99   Thumb Code    32  nfc522.o(i.check_buf_word4)
+    checkbak_id                              0x00001bb9   Thumb Code    68  nfc522.o(i.checkbak_id)
+    clr_mask                                 0x00001c01   Thumb Code    26  nfc522.o(i.clr_mask)
+    com_task_50us                            0x00001c1d   Thumb Code   180  com.o(i.com_task_50us)
+    find_card                                0x00001cdd   Thumb Code    94  nfc522.o(i.find_card)
+    flash_adc_updata                         0x00001d41   Thumb Code    42  flash.o(i.flash_adc_updata)
+    flash_earse                              0x00001d75   Thumb Code    24  flash.o(i.flash_earse)
+    flash_init                               0x00001d95   Thumb Code   146  flash.o(i.flash_init)
+    flash_odo_updata                         0x00001e41   Thumb Code    66  flash.o(i.flash_odo_updata)
+    flash_user_updata                        0x00001e91   Thumb Code    24  flash.o(i.flash_user_updata)
+    flash_write_word                         0x00001ead   Thumb Code    42  flash.o(i.flash_write_word)
+    get_crc                                  0x00001ee1   Thumb Code    50  nfc522.o(i.get_crc)
+    gpio_init                                0x00001f19   Thumb Code   146  port.o(i.gpio_init)
+    gpio_mode                                0x00001fbd   Thumb Code   100  port.o(i.gpio_mode)
+    i2c2_send                                0x00002021   Thumb Code    84  led.o(i.i2c2_send)
+    i2c2_start                               0x0000207d   Thumb Code    48  led.o(i.i2c2_start)
+    i2c2_stop                                0x000020b5   Thumb Code    38  led.o(i.i2c2_stop)
+    i2c_send                                 0x000020e5   Thumb Code    84  led.o(i.i2c_send)
+    i2c_start                                0x00002141   Thumb Code    48  led.o(i.i2c_start)
+    i2c_stop                                 0x00002179   Thumb Code    38  led.o(i.i2c_stop)
+    key_task_10ms                            0x000021a9   Thumb Code    24  key.o(i.key_task_10ms)
+    lc_add                                   0x000021c5   Thumb Code   164  com.o(i.lc_add)
+    led_check                                0x0000227d   Thumb Code   238  key.o(i.led_check)
+    led_step                                 0x00002391   Thumb Code   224  led.o(i.led_step)
+    main                                     0x00002479   Thumb Code  1308  main.o(i.main)
+    modbus_ack                               0x000029ad   Thumb Code    74  usart485.o(i.modbus_ack)
+    music_end                                0x00002a09   Thumb Code    32  music.o(i.music_end)
+    music_isr                                0x00002a31   Thumb Code  1092  music.o(i.music_isr)
+    nfc_afinit                               0x00002e79   Thumb Code    76  port.o(i.nfc_afinit)
+    nfc_loop                                 0x00002ecd   Thumb Code   490  nfc522.o(i.nfc_loop)
+    password                                 0x000030d9   Thumb Code    78  nfc522.o(i.password)
+    pcd_cmd                                  0x0000312d   Thumb Code   286  nfc522.o(i.pcd_cmd)
+    pcd_coll                                 0x00003251   Thumb Code   120  nfc522.o(i.pcd_coll)
+    pcd_rblock                               0x000032d1   Thumb Code    94  nfc522.o(i.pcd_rblock)
+    pcd_read                                 0x00003335   Thumb Code    86  nfc522.o(i.pcd_read)
+    pcd_reset                                0x00003395   Thumb Code    68  nfc522.o(i.pcd_reset)
+    pcd_wblock                               0x000033d9   Thumb Code   148  nfc522.o(i.pcd_wblock)
+    pcd_write                                0x00003471   Thumb Code    46  nfc522.o(i.pcd_write)
+    power_level_display                      0x000034a9   Thumb Code    64  led.o(i.power_level_display)
+    quake_check                              0x000034ed   Thumb Code     2  key.o(i.quake_check)
+    recv_deal                                0x000034f1   Thumb Code   562  usart485.o(i.recv_deal)
+    recve_485                                0x00003765   Thumb Code     8  usart485.o(i.recve_485)
+    run_cartoon                              0x00003771   Thumb Code   148  main.o(i.run_cartoon)
+    sel_card                                 0x00003811   Thumb Code    96  nfc522.o(i.sel_card)
+    set_mask                                 0x00003875   Thumb Code    22  nfc522.o(i.set_mask)
+    set_mode                                 0x0000388d   Thumb Code    20  nfc522.o(i.set_mode)
+    show_Rmod                                0x000038a9   Thumb Code    42  main.o(i.show_Rmod)
+    show_card                                0x000038d9   Thumb Code    52  led.o(i.show_card)
+    show_gear                                0x00003915   Thumb Code    18  led.o(i.show_gear)
+    show_mileage                             0x00003931   Thumb Code   244  led.o(i.show_mileage)
+    show_speed                               0x00003a31   Thumb Code    70  led.o(i.show_speed)
+    show_voltage                             0x00003a81   Thumb Code   162  led.o(i.show_voltage)
+    show_zuoxia1_data                        0x00003b2d   Thumb Code    50  led.o(i.show_zuoxia1_data)
+    show_zuoxia2_data                        0x00003b69   Thumb Code   116  led.o(i.show_zuoxia2_data)
+    speedope                                 0x00003be5   Thumb Code    22  com.o(i.speedope)
+    spi_send                                 0x00003c05   Thumb Code    52  nfc522.o(i.spi_send)
+    startDisplay                             0x00003c3d   Thumb Code   358  main.o(i.startDisplay)
+    start_cout                               0x00003db5   Thumb Code   354  main.o(i.start_cout)
+    tim_init                                 0x00003f31   Thumb Code    52  tim.o(i.tim_init)
+    time_cout                                0x00003f75   Thumb Code   132  main.o(i.time_cout)
+    time_dis                                 0x00004001   Thumb Code    72  led.o(i.time_dis)
+    udelay                                   0x00004055   Thumb Code    12  led.o(i.udelay)
+    wdt_init                                 0x00004061   Thumb Code    12  main.o(i.wdt_init)
+    V48_ADC0                                 0x00004070   Data          18  adc.o(.constdata)
+    V60_ADC0                                 0x00004082   Data          18  adc.o(.constdata)
+    V72_ADC0                                 0x00004094   Data          18  adc.o(.constdata)
+    Region$$Table$$Base                      0x000040d0   Number         0  anon$$obj.o(Region$$Table)
+    Region$$Table$$Limit                     0x000040f0   Number         0  anon$$obj.o(Region$$Table)
+    Soc_tmp                                  0x20000000   Data           1  adc.o(.data)
+    ADC_ref                                  0x20000002   Data           2  adc.o(.data)
+    percent                                  0x2000000c   Data           2  adc.o(.data)
+    voltage                                  0x2000000e   Data           2  adc.o(.data)
+    pre1                                     0x20000010   Data           2  adc.o(.data)
+    pre2                                     0x20000012   Data           2  adc.o(.data)
+    Status                                   0x2000001c   Data           1  flash.o(.data)
+    Init_mode                                0x2000001d   Data           1  flash.o(.data)
+    temp1                                    0x2000001e   Data           1  flash.o(.data)
+    Sta_addr                                 0x20000020   Data           2  flash.o(.data)
+    Odo_addr                                 0x20000022   Data           2  flash.o(.data)
+    ODO_lc                                   0x20000024   Data           4  flash.o(.data)
+    run_step                                 0x20000028   Data           1  main.o(.data)
+    start_step                               0x20000029   Data           1  main.o(.data)
+    half_time                                0x2000002a   Data           1  main.o(.data)
+    data_chage                               0x2000002b   Data           1  main.o(.data)
+    cartoontip                               0x2000002e   Data           1  main.o(.data)
+    sp_flg                                   0x2000002f   Data           1  main.o(.data)
+    led_change                               0x20000030   Data           1  main.o(.data)
+    last_485                                 0x20000031   Data           1  main.o(.data)
+    Cnt_10ms                                 0x20000032   Data           2  main.o(.data)
+    rel_speed                                0x20000034   Data           2  main.o(.data)
+    odocut                                   0x20000036   Data           2  main.o(.data)
+    ledCut                                   0x20000038   Data           2  main.o(.data)
+    numb                                     0x2000003a   Data           2  main.o(.data)
+    cut485                                   0x2000003c   Data           2  main.o(.data)
+    temp4                                    0x2000003e   Data           2  main.o(.data)
+    Init_tims                                0x20000040   Data           4  main.o(.data)
+    start_time                               0x20000044   Data           4  main.o(.data)
+    logov                                    0x20000048   Data           2  tim.o(.data)
+    Speed                                    0x2000004c   Data           1  com.o(.data)
+    Speedt                                   0x2000004d   Data           1  com.o(.data)
+    Wf                                       0x2000004e   Data           1  com.o(.data)
+    yxt_rcv                                  0x20000051   Data           1  com.o(.data)
+    car_dt                                   0x20000052   Data           1  com.o(.data)
+    P_STA                                    0x20000053   Data           1  com.o(.data)
+    V60_STA                                  0x20000054   Data           1  com.o(.data)
+    V72_STA                                  0x20000055   Data           1  com.o(.data)
+    yxt_vch                                  0x20000056   Data           1  com.o(.data)
+    yxt_v                                    0x20000057   Data           1  com.o(.data)
+    motor_STA                                0x20000058   Data           1  com.o(.data)
+    Cnt_hall                                 0x2000005a   Data           2  com.o(.data)
+    Trip_lc                                  0x2000005c   Data           2  com.o(.data)
+    RF_reg                                   0x20000060   Data           4  com.o(.data)
+    timeover                                 0x20000068   Data           2  com.o(.data)
+    yxt_rcv1                                 0x2000006a   Data           1  com.o(.data)
+    Alm_type                                 0x2000006b   Data           1  fdq.o(.data)
+    Cnt_acc_num                              0x2000006c   Data           1  key.o(.data)
+    ZZ_cuth                                  0x2000006d   Data           1  key.o(.data)
+    ZZ_cutl                                  0x2000006e   Data           1  key.o(.data)
+    card_learn                               0x2000006f   Data           1  key.o(.data)
+    last_type                                0x20000070   Data           1  key.o(.data)
+    Cnt_learn_tim                            0x20000074   Data           4  key.o(.data)
+    Cnt_init_tim                             0x20000078   Data           4  key.o(.data)
+    Led_level                                0x200000a8   Data           1  led.o(.data)
+    LED_HS                                   0x200000a9   Data           1  led.o(.data)
+    temp                                     0x200000b4   Data           4  led.o(.data)
+    YIP                                      0x200000b8   Data           1  music.o(.data)
+    Start_type                               0x200000b9   Data           1  music.o(.data)
+    Music_cycle                              0x200000ba   Data           2  music.o(.data)
+    Cnt_dlb_tim                              0x200000bc   Data           2  music.o(.data)
+    Cnt_lock                                 0x200000be   Data           2  music.o(.data)
+    Mu_reg0                                  0x200000c0   Data           4  music.o(.data)
+    Mu_reg1                                  0x200000c4   Data           4  music.o(.data)
+    Learn_addr                               0x200000c8   Data           1  rf.o(.data)
+    RF_learn                                 0x200000c9   Data           1  rf.o(.data)
+    RF_code                                  0x200000cb   Data           1  rf.o(.data)
+    RF_stop                                  0x200000d0   Data           2  rf.o(.data)
+    RF_le_stop                               0x200000d2   Data           2  rf.o(.data)
+    RFr_reg                                  0x200000d4   Data           4  rf.o(.data)
+    RF_addr                                  0x200000e0   Data           4  rf.o(.data)
+    RF_le_addr                               0x200000e4   Data           4  rf.o(.data)
+    Tim_write                                0x200000e8   Data           1  nfc522.o(.data)
+    Nfc_af                                   0x200000e9   Data           1  nfc522.o(.data)
+    Coll                                     0x200000ea   Data           1  nfc522.o(.data)
+    ALM_s                                    0x200000eb   Data           1  nfc522.o(.data)
+    ALM_c                                    0x200000ec   Data           1  nfc522.o(.data)
+    ZDS_c                                    0x200000ed   Data           1  nfc522.o(.data)
+    Tim_out                                  0x200000f6   Data           2  nfc522.o(.data)
+    open_buf                                 0x200000fa   Data           4  nfc522.o(.data)
+    close_buf                                0x200000fe   Data           4  nfc522.o(.data)
+    PassWord_new                             0x20000108   Data           6  nfc522.o(.data)
+    over_time                                0x2000010e   Data           1  usart485.o(.data)
+    cut_first                                0x2000010f   Data           1  usart485.o(.data)
+    tx_nub                                   0x20000110   Data           1  usart485.o(.data)
+    tx_nub1                                  0x20000111   Data           1  usart485.o(.data)
+    rx_nub                                   0x20000112   Data           1  usart485.o(.data)
+    rx_nub1                                  0x20000113   Data           1  usart485.o(.data)
+    recv_over                                0x20000114   Data           1  usart485.o(.data)
+    hour                                     0x20000115   Data           1  usart485.o(.data)
+    min                                      0x20000116   Data           1  usart485.o(.data)
+    temp2                                    0x20000117   Data           1  usart485.o(.data)
+    GuoBiao_mod                              0x20000118   Data           1  usart485.o(.data)
+    v485                                     0x20000119   Data           1  usart485.o(.data)
+    tcs_sta                                  0x2000011a   Data           1  usart485.o(.data)
+    crc                                      0x2000011c   Data           2  usart485.o(.data)
+    soc_485                                  0x2000011e   Data           2  usart485.o(.data)
+    last_trip                                0x20000120   Data           2  usart485.o(.data)
+    trip_485                                 0x20000122   Data           2  usart485.o(.data)
+    voltage_485                              0x20000124   Data           2  usart485.o(.data)
+    speed_485                                0x20000126   Data           2  usart485.o(.data)
+    R_mod                                    0x20000128   Data           1  usart485.o(.data)
+    User_data                                0x2000012c   Data          64  flash.o(.bss)
+    BLDC_Sta                                 0x2000017a   Data          11  com.o(.bss)
+    car_stat                                 0x20000188   Data          12  com.o(.bss)
+    Led_data                                 0x20000194   Data          16  led.o(.bss)
+    Led2_data                                0x200001a4   Data          16  led.o(.bss)
+    Set_card                                 0x200001b4   Data          12  nfc522.o(.bss)
+    tx_buf                                   0x200001c0   Data          15  usart485.o(.bss)
+    rx_buf                                   0x200001cf   Data          48  usart485.o(.bss)
+    __initial_sp                             0x20000400   Data           0  startup_cw32f003.o(STACK)
+
+
+
+==============================================================================
+
+Memory Map of the image
+
+  Image Entry point : 0x000008c1
+
+  Load Region LR_IROM1 (Base: 0x00000800, Size: 0x00003a1c, Max: 0x00004fe0, ABSOLUTE, COMPRESSED[0x00003924])
+
+    Execution Region ER_IROM1 (Exec base: 0x00000800, Load base: 0x00000800, Size: 0x000038f0, Max: 0x00004fe0, ABSOLUTE)
+
+    Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x00000800   0x00000800   0x000000c0   Data   RO         1130    RESET               startup_cw32f003.o
+    0x000008c0   0x000008c0   0x00000000   Code   RO         1135  * .ARM.Collect$$$$00000000  mc_p.l(entry.o)
+    0x000008c0   0x000008c0   0x00000004   Code   RO         1162    .ARM.Collect$$$$00000001  mc_p.l(entry2.o)
+    0x000008c4   0x000008c4   0x00000004   Code   RO         1165    .ARM.Collect$$$$00000004  mc_p.l(entry5.o)
+    0x000008c8   0x000008c8   0x00000000   Code   RO         1167    .ARM.Collect$$$$00000008  mc_p.l(entry7b.o)
+    0x000008c8   0x000008c8   0x00000000   Code   RO         1169    .ARM.Collect$$$$0000000A  mc_p.l(entry8b.o)
+    0x000008c8   0x000008c8   0x00000008   Code   RO         1170    .ARM.Collect$$$$0000000B  mc_p.l(entry9a.o)
+    0x000008d0   0x000008d0   0x00000000   Code   RO         1172    .ARM.Collect$$$$0000000D  mc_p.l(entry10a.o)
+    0x000008d0   0x000008d0   0x00000000   Code   RO         1174    .ARM.Collect$$$$0000000F  mc_p.l(entry11a.o)
+    0x000008d0   0x000008d0   0x00000004   Code   RO         1163    .ARM.Collect$$$$00002712  mc_p.l(entry2.o)
+    0x000008d4   0x000008d4   0x0000003c   Code   RO         1131    .text               startup_cw32f003.o
+    0x00000910   0x00000910   0x0000002c   Code   RO         1138    .text               mc_p.l(uidiv.o)
+    0x0000093c   0x0000093c   0x00000024   Code   RO         1140    .text               mc_p.l(memcpya.o)
+    0x00000960   0x00000960   0x00000024   Code   RO         1142    .text               mc_p.l(memseta.o)
+    0x00000984   0x00000984   0x000000b2   Code   RO         1146    .text               mf_p.l(fadd.o)
+    0x00000a36   0x00000a36   0x0000007c   Code   RO         1148    .text               mf_p.l(fdiv.o)
+    0x00000ab2   0x00000ab2   0x00000018   Code   RO         1150    .text               mf_p.l(fscalb.o)
+    0x00000aca   0x00000aca   0x00000002   PAD
+    0x00000acc   0x00000acc   0x00000164   Code   RO         1152    .text               mf_p.l(dadd.o)
+    0x00000c30   0x00000c30   0x0000000e   Code   RO         1154    .text               mf_p.l(ffltui.o)
+    0x00000c3e   0x00000c3e   0x00000028   Code   RO         1156    .text               mf_p.l(ffixui.o)
+    0x00000c66   0x00000c66   0x00000002   PAD
+    0x00000c68   0x00000c68   0x0000003c   Code   RO         1158    .text               mf_p.l(dfixui.o)
+    0x00000ca4   0x00000ca4   0x00000028   Code   RO         1160    .text               mf_p.l(f2d.o)
+    0x00000ccc   0x00000ccc   0x00000020   Code   RO         1176    .text               mc_p.l(llshl.o)
+    0x00000cec   0x00000cec   0x00000022   Code   RO         1178    .text               mc_p.l(llushr.o)
+    0x00000d0e   0x00000d0e   0x00000026   Code   RO         1180    .text               mc_p.l(llsshr.o)
+    0x00000d34   0x00000d34   0x00000000   Code   RO         1182    .text               mc_p.l(iusefp.o)
+    0x00000d34   0x00000d34   0x00000082   Code   RO         1183    .text               mf_p.l(fepilogue.o)
+    0x00000db6   0x00000db6   0x000000be   Code   RO         1185    .text               mf_p.l(depilogue.o)
+    0x00000e74   0x00000e74   0x00000024   Code   RO         1189    .text               mc_p.l(init.o)
+    0x00000e98   0x00000e98   0x0000003a   Code   RO         1199    .text               mc_p.l(__dczerorl.o)
+    0x00000ed2   0x00000ed2   0x00000002   PAD
+    0x00000ed4   0x00000ed4   0x00000018   Code   RO          646    i.BTIM1_IRQHandler  music.o
+    0x00000eec   0x00000eec   0x0000009c   Code   RO          192    i.BTIM2_IRQHandler  main.o
+    0x00000f88   0x00000f88   0x00000060   Code   RO          875    i.CRC16_MODBUS      usart485.o
+    0x00000fe8   0x00000fe8   0x000000b0   Code   RO          366    i.Decoder_data      com.o
+    0x00001098   0x00001098   0x000000cc   Code   RO          956    i.GPIO_Init         cw32f003_gpio.o
+    0x00001164   0x00001164   0x00000078   Code   RO          322    i.GTIM_INIT         tim.o
+    0x000011dc   0x000011dc   0x00000020   Code   RO          323    i.GTIM_IRQHandler   tim.o
+    0x000011fc   0x000011fc   0x00000034   Code   RO          876    i.InvertUint16      usart485.o
+    0x00001230   0x00001230   0x00000034   Code   RO          877    i.InvertUint8       usart485.o
+    0x00001264   0x00001264   0x00000060   Code   RO          193    i.SystemInit        main.o
+    0x000012c4   0x000012c4   0x000000a8   Code   RO          878    i.UART2_INIT        usart485.o
+    0x0000136c   0x0000136c   0x0000007c   Code   RO          879    i.UART2_IRQHandler  usart485.o
+    0x000013e8   0x000013e8   0x000000e4   Code   RO         1035    i.USART_Init        cw32f003_uart.o
+    0x000014cc   0x000014cc   0x0000002e   Code   RO         1187    i.__ARM_clz         mf_p.l(depilogue.o)
+    0x000014fa   0x000014fa   0x0000001a   Code   RO           30    i.__ARM_common_switch8  adc.o
+    0x00001514   0x00001514   0x0000000e   Code   RO         1193    i.__scatterload_copy  mc_p.l(handlers.o)
+    0x00001522   0x00001522   0x00000002   Code   RO         1194    i.__scatterload_null  mc_p.l(handlers.o)
+    0x00001524   0x00001524   0x0000000e   Code   RO         1195    i.__scatterload_zeroinit  mc_p.l(handlers.o)
+    0x00001532   0x00001532   0x00000002   PAD
+    0x00001534   0x00001534   0x000000f4   Code   RO          462    i.acc_check         key.o
+    0x00001628   0x00001628   0x00000330   Code   RO            3    i.adc_check         adc.o
+    0x00001958   0x00001958   0x00000030   Code   RO            4    i.adc_init          adc.o
+    0x00001988   0x00001988   0x00000018   Code   RO          735    i.alm_cmd           nfc522.o
+    0x000019a0   0x000019a0   0x000000cc   Code   RO          736    i.alm_send          nfc522.o
+    0x00001a6c   0x00001a6c   0x00000120   Code   RO          194    i.car_stat_updata   main.o
+    0x00001b8c   0x00001b8c   0x0000000c   Code   RO          324    i.chage_pwm         tim.o
+    0x00001b98   0x00001b98   0x00000020   Code   RO          737    i.check_buf_word4   nfc522.o
+    0x00001bb8   0x00001bb8   0x00000048   Code   RO          738    i.checkbak_id       nfc522.o
+    0x00001c00   0x00001c00   0x0000001a   Code   RO          739    i.clr_mask          nfc522.o
+    0x00001c1a   0x00001c1a   0x00000002   PAD
+    0x00001c1c   0x00001c1c   0x000000c0   Code   RO          367    i.com_task_50us     com.o
+    0x00001cdc   0x00001cdc   0x00000064   Code   RO          740    i.find_card         nfc522.o
+    0x00001d40   0x00001d40   0x00000034   Code   RO          115    i.flash_adc_updata  flash.o
+    0x00001d74   0x00001d74   0x00000020   Code   RO          116    i.flash_earse       flash.o
+    0x00001d94   0x00001d94   0x000000ac   Code   RO          117    i.flash_init        flash.o
+    0x00001e40   0x00001e40   0x00000050   Code   RO          118    i.flash_odo_updata  flash.o
+    0x00001e90   0x00001e90   0x0000001c   Code   RO          120    i.flash_user_updata  flash.o
+    0x00001eac   0x00001eac   0x00000034   Code   RO          122    i.flash_write_word  flash.o
+    0x00001ee0   0x00001ee0   0x00000038   Code   RO          741    i.get_crc           nfc522.o
+    0x00001f18   0x00001f18   0x000000a4   Code   RO          281    i.gpio_init         port.o
+    0x00001fbc   0x00001fbc   0x00000064   Code   RO          282    i.gpio_mode         port.o
+    0x00002020   0x00002020   0x0000005c   Code   RO          518    i.i2c2_send         led.o
+    0x0000207c   0x0000207c   0x00000038   Code   RO          519    i.i2c2_start        led.o
+    0x000020b4   0x000020b4   0x00000030   Code   RO          520    i.i2c2_stop         led.o
+    0x000020e4   0x000020e4   0x0000005c   Code   RO          521    i.i2c_send          led.o
+    0x00002140   0x00002140   0x00000038   Code   RO          522    i.i2c_start         led.o
+    0x00002178   0x00002178   0x00000030   Code   RO          523    i.i2c_stop          led.o
+    0x000021a8   0x000021a8   0x0000001c   Code   RO          463    i.key_task_10ms     key.o
+    0x000021c4   0x000021c4   0x000000b8   Code   RO          368    i.lc_add            com.o
+    0x0000227c   0x0000227c   0x00000114   Code   RO          464    i.led_check         key.o
+    0x00002390   0x00002390   0x000000e8   Code   RO          524    i.led_step          led.o
+    0x00002478   0x00002478   0x00000534   Code   RO          195    i.main              main.o
+    0x000029ac   0x000029ac   0x0000005c   Code   RO          880    i.modbus_ack        usart485.o
+    0x00002a08   0x00002a08   0x00000028   Code   RO          647    i.music_end         music.o
+    0x00002a30   0x00002a30   0x00000448   Code   RO          648    i.music_isr         music.o
+    0x00002e78   0x00002e78   0x00000054   Code   RO          283    i.nfc_afinit        port.o
+    0x00002ecc   0x00002ecc   0x0000020c   Code   RO          742    i.nfc_loop          nfc522.o
+    0x000030d8   0x000030d8   0x00000054   Code   RO          743    i.password          nfc522.o
+    0x0000312c   0x0000312c   0x00000124   Code   RO          744    i.pcd_cmd           nfc522.o
+    0x00003250   0x00003250   0x00000080   Code   RO          745    i.pcd_coll          nfc522.o
+    0x000032d0   0x000032d0   0x00000064   Code   RO          746    i.pcd_rblock        nfc522.o
+    0x00003334   0x00003334   0x00000060   Code   RO          747    i.pcd_read          nfc522.o
+    0x00003394   0x00003394   0x00000044   Code   RO          748    i.pcd_reset         nfc522.o
+    0x000033d8   0x000033d8   0x00000098   Code   RO          749    i.pcd_wblock        nfc522.o
+    0x00003470   0x00003470   0x00000038   Code   RO          750    i.pcd_write         nfc522.o
+    0x000034a8   0x000034a8   0x00000044   Code   RO          525    i.power_level_display  led.o
+    0x000034ec   0x000034ec   0x00000002   Code   RO          465    i.quake_check       key.o
+    0x000034ee   0x000034ee   0x00000002   PAD
+    0x000034f0   0x000034f0   0x00000274   Code   RO          881    i.recv_deal         usart485.o
+    0x00003764   0x00003764   0x0000000c   Code   RO          882    i.recve_485         usart485.o
+    0x00003770   0x00003770   0x000000a0   Code   RO          196    i.run_cartoon       main.o
+    0x00003810   0x00003810   0x00000064   Code   RO          751    i.sel_card          nfc522.o
+    0x00003874   0x00003874   0x00000016   Code   RO          752    i.set_mask          nfc522.o
+    0x0000388a   0x0000388a   0x00000002   PAD
+    0x0000388c   0x0000388c   0x0000001c   Code   RO          753    i.set_mode          nfc522.o
+    0x000038a8   0x000038a8   0x00000030   Code   RO          197    i.show_Rmod         main.o
+    0x000038d8   0x000038d8   0x0000003c   Code   RO          526    i.show_card         led.o
+    0x00003914   0x00003914   0x0000001c   Code   RO          527    i.show_gear         led.o
+    0x00003930   0x00003930   0x00000100   Code   RO          528    i.show_mileage      led.o
+    0x00003a30   0x00003a30   0x00000050   Code   RO          529    i.show_speed        led.o
+    0x00003a80   0x00003a80   0x000000ac   Code   RO          530    i.show_voltage      led.o
+    0x00003b2c   0x00003b2c   0x0000003c   Code   RO          531    i.show_zuoxia1_data  led.o
+    0x00003b68   0x00003b68   0x0000007c   Code   RO          532    i.show_zuoxia2_data  led.o
+    0x00003be4   0x00003be4   0x00000020   Code   RO          369    i.speedope          com.o
+    0x00003c04   0x00003c04   0x00000038   Code   RO          754    i.spi_send          nfc522.o
+    0x00003c3c   0x00003c3c   0x00000178   Code   RO          198    i.startDisplay      main.o
+    0x00003db4   0x00003db4   0x0000017c   Code   RO          199    i.start_cout        main.o
+    0x00003f30   0x00003f30   0x00000044   Code   RO          325    i.tim_init          tim.o
+    0x00003f74   0x00003f74   0x0000008c   Code   RO          200    i.time_cout         main.o
+    0x00004000   0x00004000   0x00000054   Code   RO          533    i.time_dis          led.o
+    0x00004054   0x00004054   0x0000000c   Code   RO          534    i.udelay            led.o
+    0x00004060   0x00004060   0x00000010   Code   RO          201    i.wdt_init          main.o
+    0x00004070   0x00004070   0x00000036   Data   RO            5    .constdata          adc.o
+    0x000040a6   0x000040a6   0x00000002   PAD
+    0x000040a8   0x000040a8   0x00000026   Data   RO          756    .constdata          nfc522.o
+    0x000040ce   0x000040ce   0x00000002   PAD
+    0x000040d0   0x000040d0   0x00000020   Data   RO         1191    Region$$Table       anon$$obj.o
+
+
+    Execution Region RW_IRAM1 (Exec base: 0x20000000, Load base: 0x000040f0, Size: 0x00000400, Max: 0x00000c00, ABSOLUTE, COMPRESSED[0x00000034])
+
+    Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x20000000   COMPRESSED   0x0000001c   Data   RW            6    .data               adc.o
+    0x2000001c   COMPRESSED   0x0000000c   Data   RW          124    .data               flash.o
+    0x20000028   COMPRESSED   0x00000020   Data   RW          202    .data               main.o
+    0x20000048   COMPRESSED   0x00000002   Data   RW          326    .data               tim.o
+    0x2000004a   COMPRESSED   0x00000002   PAD
+    0x2000004c   COMPRESSED   0x0000001c   Data   RW          371    .data               com.o
+    0x20000068   COMPRESSED   0x00000002   Data   RW          374    .data               com.o
+    0x2000006a   COMPRESSED   0x00000001   Data   RW          375    .data               com.o
+    0x2000006b   COMPRESSED   0x00000001   Data   RW          423    .data               fdq.o
+    0x2000006c   COMPRESSED   0x0000003c   Data   RW          467    .data               key.o
+    0x200000a8   COMPRESSED   0x0000000c   Data   RW          536    .data               led.o
+    0x200000b4   COMPRESSED   0x00000004   Data   RW          537    .data               led.o
+    0x200000b8   COMPRESSED   0x00000010   Data   RW          651    .data               music.o
+    0x200000c8   COMPRESSED   0x00000020   Data   RW          705    .data               rf.o
+    0x200000e8   COMPRESSED   0x00000026   Data   RW          757    .data               nfc522.o
+    0x2000010e   COMPRESSED   0x0000001a   Data   RW          885    .data               usart485.o
+    0x20000128   COMPRESSED   0x00000001   Data   RW          886    .data               usart485.o
+    0x20000129   COMPRESSED   0x00000003   PAD
+    0x2000012c        -       0x00000040   Zero   RW          123    .bss                flash.o
+    0x2000016c        -       0x00000028   Zero   RW          370    .bss                com.o
+    0x20000194        -       0x00000020   Zero   RW          535    .bss                led.o
+    0x200001b4        -       0x0000000c   Zero   RW          755    .bss                nfc522.o
+    0x200001c0        -       0x0000003f   Zero   RW          884    .bss                usart485.o
+    0x200001ff   COMPRESSED   0x00000001   PAD
+    0x20000200        -       0x00000200   Zero   RW         1128    STACK               startup_cw32f003.o
+
+
+==============================================================================
+
+Image component sizes
+
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Object Name
+
+       890         68         54         28          0     113698   adc.o
+       584         60          0         31         40       4998   com.o
+       204          0          0          0          0       1028   cw32f003_gpio.o
+       228         10          0          0          0        965   cw32f003_uart.o
+         0          0          0          1          0        273   fdq.o
+       416         72          0         12         64       4659   flash.o
+       550         70          0         60          0       2961   key.o
+      1568        144          0         16         32      11666   led.o
+      2992        298          0         32          0       7746   main.o
+      1160         72          0         16          0       4444   music.o
+      2220        130         38         38         12      14756   nfc522.o
+       348         26          0          0          0       1957   port.o
+         0          0          0         32          0       2082   rf.o
+        60         22        192          0        512        604   startup_cw32f003.o
+       232         42          0          2          0       2101   tim.o
+      1224        132          0         27         63       6421   usart485.o
+
+    ----------------------------------------------------------------------
+     12682       1146        320        300        724     180359   Object Totals
+         0          0         32          0          0          0   (incl. Generated)
+         6          0          4          5          1          0   (incl. Padding)
+
+    ----------------------------------------------------------------------
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Library Member Name
+
+        58          0          0          0          0          0   __dczerorl.o
+         0          0          0          0          0          0   entry.o
+         0          0          0          0          0          0   entry10a.o
+         0          0          0          0          0          0   entry11a.o
+         8          4          0          0          0          0   entry2.o
+         4          0          0          0          0          0   entry5.o
+         0          0          0          0          0          0   entry7b.o
+         0          0          0          0          0          0   entry8b.o
+         8          4          0          0          0          0   entry9a.o
+        30          0          0          0          0          0   handlers.o
+        36          8          0          0          0         68   init.o
+         0          0          0          0          0          0   iusefp.o
+        32          0          0          0          0         68   llshl.o
+        38          0          0          0          0         68   llsshr.o
+        34          0          0          0          0         68   llushr.o
+        36          0          0          0          0         60   memcpya.o
+        36          0          0          0          0        100   memseta.o
+        44          0          0          0          0         72   uidiv.o
+       356          4          0          0          0        140   dadd.o
+       236          0          0          0          0        216   depilogue.o
+        60         10          0          0          0         68   dfixui.o
+        40          0          0          0          0         60   f2d.o
+       178          0          0          0          0        108   fadd.o
+       124          0          0          0          0         72   fdiv.o
+       130          0          0          0          0        144   fepilogue.o
+        40          0          0          0          0         60   ffixui.o
+        14          0          0          0          0         68   ffltui.o
+        24          0          0          0          0         60   fscalb.o
+
+    ----------------------------------------------------------------------
+      1574         30          0          0          0       1500   Library Totals
+         8          0          0          0          0          0   (incl. Padding)
+
+    ----------------------------------------------------------------------
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Library Name
+
+       364         16          0          0          0        504   mc_p.l
+      1202         14          0          0          0        996   mf_p.l
+
+    ----------------------------------------------------------------------
+      1574         30          0          0          0       1500   Library Totals
+
+    ----------------------------------------------------------------------
+
+==============================================================================
+
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
+
+     14256       1176        320        300        724     177815   Grand Totals
+     14256       1176        320         52        724     177815   ELF Image Totals (compressed)
+     14256       1176        320         52          0          0   ROM Totals
+
+==============================================================================
+
+    Total RO  Size (Code + RO Data)                14576 (  14.23kB)
+    Total RW  Size (RW Data + ZI Data)              1024 (   1.00kB)
+    Total ROM Size (Code + RO Data + RW Data)      14628 (  14.29kB)
+
+==============================================================================
+

@@ -1,0 +1,61 @@
+
+
+
+ARM Macro Assembler    Page 1 
+
+
+    1 00000000         
+    2 00000000         
+    3 00000000         
+    4 00000000                 AREA             fun,CODE,READONLY
+    5 00000000                 EXPORT           DISABLE_FIQ
+    6 00000000                 EXPORT           ENABLE_FIQ
+    7 00000000                 ENTRY
+    8 00000000         
+    9 00000000         DISABLE_FIQ
+   10 00000000 2001            MOVS             R0,#0X01    ; 
+   11 00000002 F380 8810       MSR              PRIMASK,R0  ; 
+   12 00000006 4770            BX               LR
+   13 00000008         ENABLE_FIQ
+   14 00000008 2000            MOVS             R0,#0X00    ; 
+   15 0000000A F380 8810       MSR              PRIMASK,R0  ;
+   16 0000000E 4770            BX               LR
+   17 00000010                 END
+Command Line: --debug --xref --diag_suppress=9931 --cpu=Cortex-M0+ --apcs=inter
+work --depend=.\objects\fun.d -o.\objects\fun.o -I.\RTE\_CW32F003 -IC:\Users\90
+839\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include -IC:\Users\90839
+\AppData\Local\Arm\Packs\WHXY\CW32F030_DFP\1.0.4\Device\Include --predefine="__
+MICROLIB SETA 1" --predefine="__UVISION_VERSION SETA 528" --predefine="_RTE_ SE
+TA 1" --list=.\listings\fun.lst Src\fun.s
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+DISABLE_FIQ 00000000
+
+Symbol: DISABLE_FIQ
+   Definitions
+      At line 9 in file Src\fun.s
+   Uses
+      At line 5 in file Src\fun.s
+Comment: DISABLE_FIQ used once
+ENABLE_FIQ 00000008
+
+Symbol: ENABLE_FIQ
+   Definitions
+      At line 13 in file Src\fun.s
+   Uses
+      At line 6 in file Src\fun.s
+Comment: ENABLE_FIQ used once
+fun 00000000
+
+Symbol: fun
+   Definitions
+      At line 4 in file Src\fun.s
+   Uses
+      None
+Comment: fun unused
+3 symbols
+336 symbols in table

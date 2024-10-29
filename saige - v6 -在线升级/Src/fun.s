@@ -1,0 +1,17 @@
+
+
+
+ AREA fun,CODE,READONLY
+    EXPORT DISABLE_FIQ
+    EXPORT ENABLE_FIQ
+    ENTRY
+        
+DISABLE_FIQ
+    MOVS R0,#0X01     ; 
+	MSR PRIMASK,R0	  ; 
+    BX LR
+ENABLE_FIQ
+     MOVS R0,#0X00     ; 
+	 MSR PRIMASK,R0	  ;
+     BX LR	 
+    END

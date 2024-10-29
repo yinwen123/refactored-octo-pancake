@@ -1,0 +1,167 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: μVision V5.28.0.0
+Copyright (C) 2019 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: 1 908395069@qq.com, 1, LIC=NQQMA-1R0KU-TGL7T-RXUS5-8PH18-44ZFD
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.28.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 6 (build 750)
+Assembler:       Armasm.exe V5.06 update 6 (build 750)
+Linker/Locator:  ArmLink.exe V5.06 update 6 (build 750)
+Library Manager: ArmAr.exe V5.06 update 6 (build 750)
+Hex Converter:   FromElf.exe V5.06 update 6 (build 750)
+CPU DLL:         SARMCM3.DLL V5.28.0.0
+Dialog DLL:      DARMCM1.DLL V1.19.2.0
+Target DLL:      Segger\JL2CM3.dll V2.99.36.0
+Dialog DLL:      TARMCM1.DLL V1.14.1.0
+ 
+<h2>Project:</h2>
+C:\Users\90839\Desktop\B3-1\saige - v6 -在线升级\PROJ.uvprojx
+Project File Date:  10/28/2024
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 6 (build 750)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
+Rebuild target 'CW32F003'
+compiling main.c...
+Src\main.c(300): warning:  #550-D: variable "tcs_cut"  was set but never used
+      static uint8_t tcs_cut,tcs_hcut;
+Src\main.c(300): warning:  #177-D: variable "tcs_hcut"  was declared but never referenced
+      static uint8_t tcs_cut,tcs_hcut;
+Src\main.c: 2 warnings, 0 errors
+compiling com.c...
+Src\com.c(42): warning:  #550-D: variable "trip_t"  was set but never used
+      u32 trip_t = 0;// = (speed_t * Speed_opt) >> 8; //0.5s 行驶里程  1cm
+Src\com.c: 1 warning, 0 errors
+compiling flash.c...
+compiling fdq.c...
+Src\fdq.c(30): warning:  #1-D: last line of file ends without a newline
+  }
+Src\fdq.c: 1 warning, 0 errors
+compiling port.c...
+compiling adc.c...
+compiling tim.c...
+compiling key.c...
+Src\key.c(40): warning:  #177-D: variable "cnt_wait"  was declared but never referenced
+  	static u32 cnt_up = 20,cnt_long = 0,cnt_wait = 0,cnt_upzz = 0,cnt_longzz = 0,zz_flag,zzl_cut;
+Src\key.c(40): warning:  #177-D: variable "cnt_upzz"  was declared but never referenced
+  	static u32 cnt_up = 20,cnt_long = 0,cnt_wait = 0,cnt_upzz = 0,cnt_longzz = 0,zz_flag,zzl_cut;
+Src\key.c(40): warning:  #177-D: variable "cnt_longzz"  was declared but never referenced
+  	static u32 cnt_up = 20,cnt_long = 0,cnt_wait = 0,cnt_upzz = 0,cnt_longzz = 0,zz_flag,zzl_cut;
+Src\key.c(127): warning:  #177-D: variable "cnt_long"  was declared but never referenced
+  	static u32 cnt_long = 0,tims = 0;
+Src\key.c(127): warning:  #177-D: variable "tims"  was declared but never referenced
+  	static u32 cnt_long = 0,tims = 0;
+Src\key.c(128): warning:  #177-D: variable "xw_io"  was declared but never referenced
+  	static u32 xw_io;
+Src\key.c(140): warning:  #177-D: variable "cnt_upzz"  was declared but never referenced
+          cnt_upzz = 0,cnt_longzz = 0,
+Src\key.c(140): warning:  #550-D: variable "cnt_longzz"  was set but never used
+          cnt_upzz = 0,cnt_longzz = 0,
+Src\key.c(143): warning:  #177-D: variable "cnt_upjgd"  was declared but never referenced
+  		cnt_upjgd = 0,cnt_longjgd = 0,
+Src\key.c(143): warning:  #177-D: variable "cnt_longjgd"  was declared but never referenced
+  		cnt_upjgd = 0,cnt_longjgd = 0,
+Src\key.c: 10 warnings, 0 errors
+compiling led.c...
+Src\led.c(181): warning:  #550-D: variable "j"  was set but never used
+  	uint8_t j=0,k=0;
+Src\led.c(181): warning:  #177-D: variable "k"  was declared but never referenced
+  	uint8_t j=0,k=0;
+Src\led.c: 2 warnings, 0 errors
+compiling rf.c...
+compiling USART485.c...
+compiling cw32f003_gpio.c...
+compiling nfc522.c...
+Src\nfc522.c(418): warning:  #177-D: variable "tims"  was declared but never referenced
+      static u8 bit = 0,byte = 0,tims = 0,step2 = 0;
+Src\nfc522.c(521): warning:  #550-D: variable "s_s"  was set but never used
+      static u8 step = 0,leave = 0,cnt_ontim = 0,card_type = 0,s_s = 0;
+Src\nfc522.c: 2 warnings, 0 errors
+compiling music.c...
+Src\music.c(19): warning:  #174-D: expression has no effect
+      MUSIC_PORT_STOP;
+Src\music.c(28): warning:  #174-D: expression has no effect
+  	MUSIC_PORT_OUT;
+Src\music.c(39): warning:  #174-D: expression has no effect
+                  MUSIC_PORT_XOR;
+Src\music.c(53): warning:  #174-D: expression has no effect
+                          MUSIC_PORT_OUT;
+Src\music.c(85): warning:  #174-D: expression has no effect
+                                  MUSIC_PORT_STOP;
+Src\music.c(114): warning:  #174-D: expression has no effect
+              MUSIC_PORT_XOR;
+Src\music.c(148): warning:  #174-D: expression has no effect
+              MUSIC_PORT_XOR;
+Src\music.c(196): warning:  #174-D: expression has no effect
+              MUSIC_PORT_XOR;
+Src\music.c(232): warning:  #174-D: expression has no effect
+                  MUSIC_PORT_XOR;
+Src\music.c(248): warning:  #174-D: expression has no effect
+                      MUSIC_PORT_OUT;
+Src\music.c(259): warning:  #174-D: expression has no effect
+                          MUSIC_PORT_STOP;
+Src\music.c(267): warning:  #174-D: expression has no effect
+                          MUSIC_PORT_STOP;
+Src\music.c(294): warning:  #174-D: expression has no effect
+              MUSIC_PORT_XOR;
+Src\music.c(324): warning:  #174-D: expression has no effect
+              MUSIC_PORT_XOR;
+Src\music.c(348): warning:  #174-D: expression has no effect
+              MUSIC_PORT_XOR;
+Src\music.c(372): warning:  #174-D: expression has no effect
+              MUSIC_PORT_XOR_ONE;
+Src\music.c(393): warning:  #174-D: expression has no effect
+                  MUSIC_PORT_XOR;
+Src\music.c(400): warning:  #174-D: expression has no effect
+                      MUSIC_PORT_OUT;
+Src\music.c(411): warning:  #174-D: expression has no effect
+                          MUSIC_PORT_STOP;
+Src\music.c(425): warning:  #174-D: expression has no effect
+              MUSIC_PORT_XOR;
+Src\music.c(452): warning:  #174-D: expression has no effect
+                  MUSIC_PORT_XOR;
+Src\music.c(460): warning:  #174-D: expression has no effect
+                      MUSIC_PORT_OUT;
+Src\music.c(468): warning:  #174-D: expression has no effect
+                      MUSIC_PORT_STOP;
+Src\music.c(481): warning:  #174-D: expression has no effect
+              MUSIC_PORT_XOR;
+Src\music.c: 24 warnings, 0 errors
+assembling startup_cw32f003.s...
+compiling cw32f003_uart.c...
+linking...
+Program Size: Code=14256 RO-data=320 RW-data=300 ZI-data=724  
+FromELF: creating hex file...
+After Build - User command #1: C:\Keil_v5\\ARM\ARMCC\bin\fromelf.exe --bin --output=PORJ.bin .\Objects\PORJ.axf
+".\Objects\PORJ.axf" - 0 Error(s), 42 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.9.0.pack
+                ARM.CMSIS.5.9.0
+                CMSIS (Common Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.6.0
+
+Package Vendor: WHXY
+                
+                WHXY.CW32F003_DFP.1.0.4
+                CW32 ARM Cortex-M0+ Device Family Pack
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_CW32F003
+  C:\Users\90839\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include
+  C:\Users\90839\AppData\Local\Arm\Packs\WHXY\CW32F003_DFP\1.0.4\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.6.0
+Build Time Elapsed:  00:00:04
+</pre>
+</body>
+</html>

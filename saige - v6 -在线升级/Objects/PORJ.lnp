@@ -1,0 +1,21 @@
+--cpu Cortex-M0+
+".\objects\adc.o"
+".\objects\flash.o"
+".\objects\main.o"
+".\objects\port.o"
+".\objects\tim.o"
+".\objects\com.o"
+".\objects\fdq.o"
+".\objects\key.o"
+".\objects\led.o"
+".\objects\music.o"
+".\objects\rf.o"
+".\objects\nfc522.o"
+".\objects\usart485.o"
+".\objects\cw32f003_gpio.o"
+".\objects\cw32f003_uart.o"
+".\objects\startup_cw32f003.o"
+--library_type=microlib --strict --scatter ".\Objects\PORJ.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\PORJ.map" -o .\Objects\PORJ.axf

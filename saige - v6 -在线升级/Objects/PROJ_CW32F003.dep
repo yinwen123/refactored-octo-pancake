@@ -1,0 +1,359 @@
+Dependencies for Project 'PROJ', Target 'CW32F003': (DO NOT MODIFY !)
+F (.\Src\adc.c)(0x66F3A52B)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O2 --apcs=interwork --split_sections -I .\Inc -I .\Core-I.\RTE\_CW32F003-IC:\Users\90839\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\Users\90839\AppData\Local\Arm\Packs\WHXY\CW32F003_DFP\1.0.4\Device\Include-D__UVISION_VERSION="528" -D_RTE_-o .\objects\adc.o --omf_browse .\objects\adc.crf --depend .\objects\adc.d)
+I (.\Inc\inc.h)(0x66F78FC5)
+I (.\Inc\type.h)(0x60126C49)
+I (.\Core\cw32f003.h)(0x66A0A1A6)
+I (C:\Users\90839\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\core_cm0plus.h)(0x626F4ADE)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5CEB79E2)
+I (C:\Users\90839\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_version.h)(0x626F4ADE)
+I (C:\Users\90839\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_compiler.h)(0x626F4ADE)
+I (C:\Users\90839\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_armcc.h)(0x626F4ADE)
+I (.\Inc\port.h)(0x66AC726F)
+I (.\Inc\tim.h)(0x66B6D25E)
+I (.\Inc\flash.h)(0x668B8F46)
+I (.\Inc\adc.h)(0x66988987)
+I (.\Inc\com.h)(0x66A9E9CE)
+I (.\Inc\fdq.h)(0x668DDDDB)
+I (.\Inc\key.h)(0x63240CBC)
+I (.\Inc\music.h)(0x66A0A3AB)
+I (.\Inc\led.h)(0x66C5AECF)
+I (.\Inc\rf.h)(0x6353A000)
+I (.\Inc\cw32f003_uart.h)(0x66A0A1A7)
+I (.\Inc\base_types.h)(0x66A08D65)
+I (C:\Keil_v5\ARM\ARMCC\include\assert.h)(0x5CEB79D6)
+I (.\Inc\cw32f003_gpio.h)(0x66A0A1A7)
+F (.\Src\flash.c)(0x671F518E)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O2 --apcs=interwork --split_sections -I .\Inc -I .\Core-I.\RTE\_CW32F003-IC:\Users\90839\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\Users\90839\AppData\Local\Arm\Packs\WHXY\CW32F003_DFP\1.0.4\Device\Include-D__UVISION_VERSION="528" -D_RTE_-o .\objects\flash.o --omf_browse .\objects\flash.crf --depend .\objects\flash.d)
+I (.\Inc\inc.h)(0x66F78FC5)
+I (.\Inc\type.h)(0x60126C49)
+I (.\Core\cw32f003.h)(0x66A0A1A6)
+I (C:\Users\90839\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\core_cm0plus.h)(0x626F4ADE)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5CEB79E2)
+I (C:\Users\90839\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_version.h)(0x626F4ADE)
+I (C:\Users\90839\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_compiler.h)(0x626F4ADE)
+I (C:\Users\90839\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_armcc.h)(0x626F4ADE)
+I (.\Inc\port.h)(0x66AC726F)
+I (.\Inc\tim.h)(0x66B6D25E)
+I (.\Inc\flash.h)(0x668B8F46)
+I (.\Inc\adc.h)(0x66988987)
+I (.\Inc\com.h)(0x66A9E9CE)
+I (.\Inc\fdq.h)(0x668DDDDB)
+I (.\Inc\key.h)(0x63240CBC)
+I (.\Inc\music.h)(0x66A0A3AB)
+I (.\Inc\led.h)(0x66C5AECF)
+I (.\Inc\rf.h)(0x6353A000)
+I (.\Inc\cw32f003_uart.h)(0x66A0A1A7)
+I (.\Inc\base_types.h)(0x66A08D65)
+I (C:\Keil_v5\ARM\ARMCC\include\assert.h)(0x5CEB79D6)
+I (.\Inc\cw32f003_gpio.h)(0x66A0A1A7)
+F (.\Src\main.c)(0x671F46CC)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O2 --apcs=interwork --split_sections -I .\Inc -I .\Core-I.\RTE\_CW32F003-IC:\Users\90839\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\Users\90839\AppData\Local\Arm\Packs\WHXY\CW32F003_DFP\1.0.4\Device\Include-D__UVISION_VERSION="528" -D_RTE_-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
+I (.\Inc\inc.h)(0x66F78FC5)
+I (.\Inc\type.h)(0x60126C49)
+I (.\Core\cw32f003.h)(0x66A0A1A6)
+I (C:\Users\90839\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\core_cm0plus.h)(0x626F4ADE)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5CEB79E2)
+I (C:\Users\90839\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_version.h)(0x626F4ADE)
+I (C:\Users\90839\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_compiler.h)(0x626F4ADE)
+I (C:\Users\90839\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_armcc.h)(0x626F4ADE)
+I (.\Inc\port.h)(0x66AC726F)
+I (.\Inc\tim.h)(0x66B6D25E)
+I (.\Inc\flash.h)(0x668B8F46)
+I (.\Inc\adc.h)(0x66988987)
+I (.\Inc\com.h)(0x66A9E9CE)
+I (.\Inc\fdq.h)(0x668DDDDB)
+I (.\Inc\key.h)(0x63240CBC)
+I (.\Inc\music.h)(0x66A0A3AB)
+I (.\Inc\led.h)(0x66C5AECF)
+I (.\Inc\rf.h)(0x6353A000)
+I (.\Inc\cw32f003_uart.h)(0x66A0A1A7)
+I (.\Inc\base_types.h)(0x66A08D65)
+I (C:\Keil_v5\ARM\ARMCC\include\assert.h)(0x5CEB79D6)
+I (.\Inc\cw32f003_gpio.h)(0x66A0A1A7)
+F (.\Src\port.c)(0x66B6B234)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O2 --apcs=interwork --split_sections -I .\Inc -I .\Core-I.\RTE\_CW32F003-IC:\Users\90839\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\Users\90839\AppData\Local\Arm\Packs\WHXY\CW32F003_DFP\1.0.4\Device\Include-D__UVISION_VERSION="528" -D_RTE_-o .\objects\port.o --omf_browse .\objects\port.crf --depend .\objects\port.d)
+I (.\Inc\inc.h)(0x66F78FC5)
+I (.\Inc\type.h)(0x60126C49)
+I (.\Core\cw32f003.h)(0x66A0A1A6)
+I (C:\Users\90839\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\core_cm0plus.h)(0x626F4ADE)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5CEB79E2)
+I (C:\Users\90839\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_version.h)(0x626F4ADE)
+I (C:\Users\90839\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_compiler.h)(0x626F4ADE)
+I (C:\Users\90839\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_armcc.h)(0x626F4ADE)
+I (.\Inc\port.h)(0x66AC726F)
+I (.\Inc\tim.h)(0x66B6D25E)
+I (.\Inc\flash.h)(0x668B8F46)
+I (.\Inc\adc.h)(0x66988987)
+I (.\Inc\com.h)(0x66A9E9CE)
+I (.\Inc\fdq.h)(0x668DDDDB)
+I (.\Inc\key.h)(0x63240CBC)
+I (.\Inc\music.h)(0x66A0A3AB)
+I (.\Inc\led.h)(0x66C5AECF)
+I (.\Inc\rf.h)(0x6353A000)
+I (.\Inc\cw32f003_uart.h)(0x66A0A1A7)
+I (.\Inc\base_types.h)(0x66A08D65)
+I (C:\Keil_v5\ARM\ARMCC\include\assert.h)(0x5CEB79D6)
+I (.\Inc\cw32f003_gpio.h)(0x66A0A1A7)
+F (.\Src\tim.c)(0x66BAFF72)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O2 --apcs=interwork --split_sections -I .\Inc -I .\Core-I.\RTE\_CW32F003-IC:\Users\90839\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\Users\90839\AppData\Local\Arm\Packs\WHXY\CW32F003_DFP\1.0.4\Device\Include-D__UVISION_VERSION="528" -D_RTE_-o .\objects\tim.o --omf_browse .\objects\tim.crf --depend .\objects\tim.d)
+I (.\Inc\inc.h)(0x66F78FC5)
+I (.\Inc\type.h)(0x60126C49)
+I (.\Core\cw32f003.h)(0x66A0A1A6)
+I (C:\Users\90839\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\core_cm0plus.h)(0x626F4ADE)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5CEB79E2)
+I (C:\Users\90839\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_version.h)(0x626F4ADE)
+I (C:\Users\90839\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_compiler.h)(0x626F4ADE)
+I (C:\Users\90839\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_armcc.h)(0x626F4ADE)
+I (.\Inc\port.h)(0x66AC726F)
+I (.\Inc\tim.h)(0x66B6D25E)
+I (.\Inc\flash.h)(0x668B8F46)
+I (.\Inc\adc.h)(0x66988987)
+I (.\Inc\com.h)(0x66A9E9CE)
+I (.\Inc\fdq.h)(0x668DDDDB)
+I (.\Inc\key.h)(0x63240CBC)
+I (.\Inc\music.h)(0x66A0A3AB)
+I (.\Inc\led.h)(0x66C5AECF)
+I (.\Inc\rf.h)(0x6353A000)
+I (.\Inc\cw32f003_uart.h)(0x66A0A1A7)
+I (.\Inc\base_types.h)(0x66A08D65)
+I (C:\Keil_v5\ARM\ARMCC\include\assert.h)(0x5CEB79D6)
+I (.\Inc\cw32f003_gpio.h)(0x66A0A1A7)
+F (.\Src\com.c)(0x66F61C12)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O2 --apcs=interwork --split_sections -I .\Inc -I .\Core-I.\RTE\_CW32F003-IC:\Users\90839\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\Users\90839\AppData\Local\Arm\Packs\WHXY\CW32F003_DFP\1.0.4\Device\Include-D__UVISION_VERSION="528" -D_RTE_-o .\objects\com.o --omf_browse .\objects\com.crf --depend .\objects\com.d)
+I (.\Inc\inc.h)(0x66F78FC5)
+I (.\Inc\type.h)(0x60126C49)
+I (.\Core\cw32f003.h)(0x66A0A1A6)
+I (C:\Users\90839\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\core_cm0plus.h)(0x626F4ADE)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5CEB79E2)
+I (C:\Users\90839\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_version.h)(0x626F4ADE)
+I (C:\Users\90839\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_compiler.h)(0x626F4ADE)
+I (C:\Users\90839\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_armcc.h)(0x626F4ADE)
+I (.\Inc\port.h)(0x66AC726F)
+I (.\Inc\tim.h)(0x66B6D25E)
+I (.\Inc\flash.h)(0x668B8F46)
+I (.\Inc\adc.h)(0x66988987)
+I (.\Inc\com.h)(0x66A9E9CE)
+I (.\Inc\fdq.h)(0x668DDDDB)
+I (.\Inc\key.h)(0x63240CBC)
+I (.\Inc\music.h)(0x66A0A3AB)
+I (.\Inc\led.h)(0x66C5AECF)
+I (.\Inc\rf.h)(0x6353A000)
+I (.\Inc\cw32f003_uart.h)(0x66A0A1A7)
+I (.\Inc\base_types.h)(0x66A08D65)
+I (C:\Keil_v5\ARM\ARMCC\include\assert.h)(0x5CEB79D6)
+I (.\Inc\cw32f003_gpio.h)(0x66A0A1A7)
+F (.\Src\fdq.c)(0x668DDE60)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O2 --apcs=interwork --split_sections -I .\Inc -I .\Core-I.\RTE\_CW32F003-IC:\Users\90839\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\Users\90839\AppData\Local\Arm\Packs\WHXY\CW32F003_DFP\1.0.4\Device\Include-D__UVISION_VERSION="528" -D_RTE_-o .\objects\fdq.o --omf_browse .\objects\fdq.crf --depend .\objects\fdq.d)
+I (.\Inc\inc.h)(0x66F78FC5)
+I (.\Inc\type.h)(0x60126C49)
+I (.\Core\cw32f003.h)(0x66A0A1A6)
+I (C:\Users\90839\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\core_cm0plus.h)(0x626F4ADE)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5CEB79E2)
+I (C:\Users\90839\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_version.h)(0x626F4ADE)
+I (C:\Users\90839\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_compiler.h)(0x626F4ADE)
+I (C:\Users\90839\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_armcc.h)(0x626F4ADE)
+I (.\Inc\port.h)(0x66AC726F)
+I (.\Inc\tim.h)(0x66B6D25E)
+I (.\Inc\flash.h)(0x668B8F46)
+I (.\Inc\adc.h)(0x66988987)
+I (.\Inc\com.h)(0x66A9E9CE)
+I (.\Inc\fdq.h)(0x668DDDDB)
+I (.\Inc\key.h)(0x63240CBC)
+I (.\Inc\music.h)(0x66A0A3AB)
+I (.\Inc\led.h)(0x66C5AECF)
+I (.\Inc\rf.h)(0x6353A000)
+I (.\Inc\cw32f003_uart.h)(0x66A0A1A7)
+I (.\Inc\base_types.h)(0x66A08D65)
+I (C:\Keil_v5\ARM\ARMCC\include\assert.h)(0x5CEB79D6)
+I (.\Inc\cw32f003_gpio.h)(0x66A0A1A7)
+F (.\Src\key.c)(0x671B57A9)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O2 --apcs=interwork --split_sections -I .\Inc -I .\Core-I.\RTE\_CW32F003-IC:\Users\90839\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\Users\90839\AppData\Local\Arm\Packs\WHXY\CW32F003_DFP\1.0.4\Device\Include-D__UVISION_VERSION="528" -D_RTE_-o .\objects\key.o --omf_browse .\objects\key.crf --depend .\objects\key.d)
+I (.\Inc\inc.h)(0x66F78FC5)
+I (.\Inc\type.h)(0x60126C49)
+I (.\Core\cw32f003.h)(0x66A0A1A6)
+I (C:\Users\90839\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\core_cm0plus.h)(0x626F4ADE)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5CEB79E2)
+I (C:\Users\90839\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_version.h)(0x626F4ADE)
+I (C:\Users\90839\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_compiler.h)(0x626F4ADE)
+I (C:\Users\90839\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_armcc.h)(0x626F4ADE)
+I (.\Inc\port.h)(0x66AC726F)
+I (.\Inc\tim.h)(0x66B6D25E)
+I (.\Inc\flash.h)(0x668B8F46)
+I (.\Inc\adc.h)(0x66988987)
+I (.\Inc\com.h)(0x66A9E9CE)
+I (.\Inc\fdq.h)(0x668DDDDB)
+I (.\Inc\key.h)(0x63240CBC)
+I (.\Inc\music.h)(0x66A0A3AB)
+I (.\Inc\led.h)(0x66C5AECF)
+I (.\Inc\rf.h)(0x6353A000)
+I (.\Inc\cw32f003_uart.h)(0x66A0A1A7)
+I (.\Inc\base_types.h)(0x66A08D65)
+I (C:\Keil_v5\ARM\ARMCC\include\assert.h)(0x5CEB79D6)
+I (.\Inc\cw32f003_gpio.h)(0x66A0A1A7)
+F (.\Src\led.c)(0x66F11DD2)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O2 --apcs=interwork --split_sections -I .\Inc -I .\Core-I.\RTE\_CW32F003-IC:\Users\90839\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\Users\90839\AppData\Local\Arm\Packs\WHXY\CW32F003_DFP\1.0.4\Device\Include-D__UVISION_VERSION="528" -D_RTE_-o .\objects\led.o --omf_browse .\objects\led.crf --depend .\objects\led.d)
+I (.\Inc\inc.h)(0x66F78FC5)
+I (.\Inc\type.h)(0x60126C49)
+I (.\Core\cw32f003.h)(0x66A0A1A6)
+I (C:\Users\90839\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\core_cm0plus.h)(0x626F4ADE)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5CEB79E2)
+I (C:\Users\90839\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_version.h)(0x626F4ADE)
+I (C:\Users\90839\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_compiler.h)(0x626F4ADE)
+I (C:\Users\90839\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_armcc.h)(0x626F4ADE)
+I (.\Inc\port.h)(0x66AC726F)
+I (.\Inc\tim.h)(0x66B6D25E)
+I (.\Inc\flash.h)(0x668B8F46)
+I (.\Inc\adc.h)(0x66988987)
+I (.\Inc\com.h)(0x66A9E9CE)
+I (.\Inc\fdq.h)(0x668DDDDB)
+I (.\Inc\key.h)(0x63240CBC)
+I (.\Inc\music.h)(0x66A0A3AB)
+I (.\Inc\led.h)(0x66C5AECF)
+I (.\Inc\rf.h)(0x6353A000)
+I (.\Inc\cw32f003_uart.h)(0x66A0A1A7)
+I (.\Inc\base_types.h)(0x66A08D65)
+I (C:\Keil_v5\ARM\ARMCC\include\assert.h)(0x5CEB79D6)
+I (.\Inc\cw32f003_gpio.h)(0x66A0A1A7)
+F (.\Src\music.c)(0x66A0A530)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O2 --apcs=interwork --split_sections -I .\Inc -I .\Core-I.\RTE\_CW32F003-IC:\Users\90839\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\Users\90839\AppData\Local\Arm\Packs\WHXY\CW32F003_DFP\1.0.4\Device\Include-D__UVISION_VERSION="528" -D_RTE_-o .\objects\music.o --omf_browse .\objects\music.crf --depend .\objects\music.d)
+I (.\Inc\inc.h)(0x66F78FC5)
+I (.\Inc\type.h)(0x60126C49)
+I (.\Core\cw32f003.h)(0x66A0A1A6)
+I (C:\Users\90839\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\core_cm0plus.h)(0x626F4ADE)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5CEB79E2)
+I (C:\Users\90839\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_version.h)(0x626F4ADE)
+I (C:\Users\90839\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_compiler.h)(0x626F4ADE)
+I (C:\Users\90839\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_armcc.h)(0x626F4ADE)
+I (.\Inc\port.h)(0x66AC726F)
+I (.\Inc\tim.h)(0x66B6D25E)
+I (.\Inc\flash.h)(0x668B8F46)
+I (.\Inc\adc.h)(0x66988987)
+I (.\Inc\com.h)(0x66A9E9CE)
+I (.\Inc\fdq.h)(0x668DDDDB)
+I (.\Inc\key.h)(0x63240CBC)
+I (.\Inc\music.h)(0x66A0A3AB)
+I (.\Inc\led.h)(0x66C5AECF)
+I (.\Inc\rf.h)(0x6353A000)
+I (.\Inc\cw32f003_uart.h)(0x66A0A1A7)
+I (.\Inc\base_types.h)(0x66A08D65)
+I (C:\Keil_v5\ARM\ARMCC\include\assert.h)(0x5CEB79D6)
+I (.\Inc\cw32f003_gpio.h)(0x66A0A1A7)
+F (.\Src\rf.c)(0x668E4E9D)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O2 --apcs=interwork --split_sections -I .\Inc -I .\Core-I.\RTE\_CW32F003-IC:\Users\90839\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\Users\90839\AppData\Local\Arm\Packs\WHXY\CW32F003_DFP\1.0.4\Device\Include-D__UVISION_VERSION="528" -D_RTE_-o .\objects\rf.o --omf_browse .\objects\rf.crf --depend .\objects\rf.d)
+I (.\Inc\inc.h)(0x66F78FC5)
+I (.\Inc\type.h)(0x60126C49)
+I (.\Core\cw32f003.h)(0x66A0A1A6)
+I (C:\Users\90839\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\core_cm0plus.h)(0x626F4ADE)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5CEB79E2)
+I (C:\Users\90839\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_version.h)(0x626F4ADE)
+I (C:\Users\90839\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_compiler.h)(0x626F4ADE)
+I (C:\Users\90839\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_armcc.h)(0x626F4ADE)
+I (.\Inc\port.h)(0x66AC726F)
+I (.\Inc\tim.h)(0x66B6D25E)
+I (.\Inc\flash.h)(0x668B8F46)
+I (.\Inc\adc.h)(0x66988987)
+I (.\Inc\com.h)(0x66A9E9CE)
+I (.\Inc\fdq.h)(0x668DDDDB)
+I (.\Inc\key.h)(0x63240CBC)
+I (.\Inc\music.h)(0x66A0A3AB)
+I (.\Inc\led.h)(0x66C5AECF)
+I (.\Inc\rf.h)(0x6353A000)
+I (.\Inc\cw32f003_uart.h)(0x66A0A1A7)
+I (.\Inc\base_types.h)(0x66A08D65)
+I (C:\Keil_v5\ARM\ARMCC\include\assert.h)(0x5CEB79D6)
+I (.\Inc\cw32f003_gpio.h)(0x66A0A1A7)
+F (.\Src\nfc522.c)(0x66B31286)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O2 --apcs=interwork --split_sections -I .\Inc -I .\Core-I.\RTE\_CW32F003-IC:\Users\90839\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\Users\90839\AppData\Local\Arm\Packs\WHXY\CW32F003_DFP\1.0.4\Device\Include-D__UVISION_VERSION="528" -D_RTE_-o .\objects\nfc522.o --omf_browse .\objects\nfc522.crf --depend .\objects\nfc522.d)
+I (.\Inc\inc.h)(0x66F78FC5)
+I (.\Inc\type.h)(0x60126C49)
+I (.\Core\cw32f003.h)(0x66A0A1A6)
+I (C:\Users\90839\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\core_cm0plus.h)(0x626F4ADE)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5CEB79E2)
+I (C:\Users\90839\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_version.h)(0x626F4ADE)
+I (C:\Users\90839\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_compiler.h)(0x626F4ADE)
+I (C:\Users\90839\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_armcc.h)(0x626F4ADE)
+I (.\Inc\port.h)(0x66AC726F)
+I (.\Inc\tim.h)(0x66B6D25E)
+I (.\Inc\flash.h)(0x668B8F46)
+I (.\Inc\adc.h)(0x66988987)
+I (.\Inc\com.h)(0x66A9E9CE)
+I (.\Inc\fdq.h)(0x668DDDDB)
+I (.\Inc\key.h)(0x63240CBC)
+I (.\Inc\music.h)(0x66A0A3AB)
+I (.\Inc\led.h)(0x66C5AECF)
+I (.\Inc\rf.h)(0x6353A000)
+I (.\Inc\cw32f003_uart.h)(0x66A0A1A7)
+I (.\Inc\base_types.h)(0x66A08D65)
+I (C:\Keil_v5\ARM\ARMCC\include\assert.h)(0x5CEB79D6)
+I (.\Inc\cw32f003_gpio.h)(0x66A0A1A7)
+F (.\USART485.c)(0x66F905E4)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O2 --apcs=interwork --split_sections -I .\Inc -I .\Core-I.\RTE\_CW32F003-IC:\Users\90839\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\Users\90839\AppData\Local\Arm\Packs\WHXY\CW32F003_DFP\1.0.4\Device\Include-D__UVISION_VERSION="528" -D_RTE_-o .\objects\usart485.o --omf_browse .\objects\usart485.crf --depend .\objects\usart485.d)
+I (.\Inc\inc.h)(0x66F78FC5)
+I (.\Inc\type.h)(0x60126C49)
+I (.\Core\cw32f003.h)(0x66A0A1A6)
+I (C:\Users\90839\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\core_cm0plus.h)(0x626F4ADE)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5CEB79E2)
+I (C:\Users\90839\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_version.h)(0x626F4ADE)
+I (C:\Users\90839\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_compiler.h)(0x626F4ADE)
+I (C:\Users\90839\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_armcc.h)(0x626F4ADE)
+I (.\Inc\port.h)(0x66AC726F)
+I (.\Inc\tim.h)(0x66B6D25E)
+I (.\Inc\flash.h)(0x668B8F46)
+I (.\Inc\adc.h)(0x66988987)
+I (.\Inc\com.h)(0x66A9E9CE)
+I (.\Inc\fdq.h)(0x668DDDDB)
+I (.\Inc\key.h)(0x63240CBC)
+I (.\Inc\music.h)(0x66A0A3AB)
+I (.\Inc\led.h)(0x66C5AECF)
+I (.\Inc\rf.h)(0x6353A000)
+I (.\Inc\cw32f003_uart.h)(0x66A0A1A7)
+I (.\Inc\base_types.h)(0x66A08D65)
+I (C:\Keil_v5\ARM\ARMCC\include\assert.h)(0x5CEB79D6)
+I (.\Inc\cw32f003_gpio.h)(0x66A0A1A7)
+F (.\Src\cw32f003_gpio.c)(0x62AA9477)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O2 --apcs=interwork --split_sections -I .\Inc -I .\Core-I.\RTE\_CW32F003-IC:\Users\90839\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\Users\90839\AppData\Local\Arm\Packs\WHXY\CW32F003_DFP\1.0.4\Device\Include-D__UVISION_VERSION="528" -D_RTE_-o .\objects\cw32f003_gpio.o --omf_browse .\objects\cw32f003_gpio.crf --depend .\objects\cw32f003_gpio.d)
+I (.\Inc\cw32f003_gpio.h)(0x66A0A1A7)
+I (.\Inc\base_types.h)(0x66A08D65)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5CEB79E2)
+I (C:\Keil_v5\ARM\ARMCC\include\assert.h)(0x5CEB79D6)
+I (.\Inc\inc.h)(0x66F78FC5)
+I (.\Inc\type.h)(0x60126C49)
+I (.\Core\cw32f003.h)(0x66A0A1A6)
+I (C:\Users\90839\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\core_cm0plus.h)(0x626F4ADE)
+I (C:\Users\90839\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_version.h)(0x626F4ADE)
+I (C:\Users\90839\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_compiler.h)(0x626F4ADE)
+I (C:\Users\90839\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_armcc.h)(0x626F4ADE)
+I (.\Inc\port.h)(0x66AC726F)
+I (.\Inc\tim.h)(0x66B6D25E)
+I (.\Inc\flash.h)(0x668B8F46)
+I (.\Inc\adc.h)(0x66988987)
+I (.\Inc\com.h)(0x66A9E9CE)
+I (.\Inc\fdq.h)(0x668DDDDB)
+I (.\Inc\key.h)(0x63240CBC)
+I (.\Inc\music.h)(0x66A0A3AB)
+I (.\Inc\led.h)(0x66C5AECF)
+I (.\Inc\rf.h)(0x6353A000)
+I (.\Inc\cw32f003_uart.h)(0x66A0A1A7)
+F (.\Src\cw32f003_uart.c)(0x66A08CF7)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O2 --apcs=interwork --split_sections -I .\Inc -I .\Core-I.\RTE\_CW32F003-IC:\Users\90839\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\Users\90839\AppData\Local\Arm\Packs\WHXY\CW32F003_DFP\1.0.4\Device\Include-D__UVISION_VERSION="528" -D_RTE_-o .\objects\cw32f003_uart.o --omf_browse .\objects\cw32f003_uart.crf --depend .\objects\cw32f003_uart.d)
+I (.\Inc\cw32f003_uart.h)(0x66A0A1A7)
+I (.\Inc\inc.h)(0x66F78FC5)
+I (.\Inc\type.h)(0x60126C49)
+I (.\Core\cw32f003.h)(0x66A0A1A6)
+I (C:\Users\90839\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\core_cm0plus.h)(0x626F4ADE)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5CEB79E2)
+I (C:\Users\90839\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_version.h)(0x626F4ADE)
+I (C:\Users\90839\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_compiler.h)(0x626F4ADE)
+I (C:\Users\90839\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_armcc.h)(0x626F4ADE)
+I (.\Inc\port.h)(0x66AC726F)
+I (.\Inc\tim.h)(0x66B6D25E)
+I (.\Inc\flash.h)(0x668B8F46)
+I (.\Inc\adc.h)(0x66988987)
+I (.\Inc\com.h)(0x66A9E9CE)
+I (.\Inc\fdq.h)(0x668DDDDB)
+I (.\Inc\key.h)(0x63240CBC)
+I (.\Inc\music.h)(0x66A0A3AB)
+I (.\Inc\led.h)(0x66C5AECF)
+I (.\Inc\rf.h)(0x6353A000)
+I (.\Inc\cw32f003_gpio.h)(0x66A0A1A7)
+I (.\Inc\base_types.h)(0x66A08D65)
+I (C:\Keil_v5\ARM\ARMCC\include\assert.h)(0x5CEB79D6)
+F (.\Inc\adc.h)(0x66988987)()
+F (.\Inc\flash.h)(0x668B8F46)()
+F (.\Inc\inc.h)(0x66F78FC5)()
+F (.\Inc\port.h)(0x66AC726F)()
+F (.\Inc\tim.h)(0x66B6D25E)()
+F (.\Inc\type.h)(0x60126C49)()
+F (.\Inc\com.h)(0x66A9E9CE)()
+F (.\Inc\fdq.h)(0x668DDDDB)()
+F (.\Inc\key.h)(0x63240CBC)()
+F (.\Inc\led.h)(0x66C5AECF)()
+F (.\Inc\music.h)(0x66A0A3AB)()
+F (.\Inc\rf.h)(0x6353A000)()
+F (.\Core\startup_cw32f003.s)(0x6196064E)(--cpu Cortex-M0+ -g --apcs=interwork --pd "__MICROLIB SETA 1"-I.\RTE\_CW32F003-IC:\Users\90839\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\Users\90839\AppData\Local\Arm\Packs\WHXY\CW32F003_DFP\1.0.4\Device\Include--pd "__UVISION_VERSION SETA 528" --pd "_RTE_ SETA 1"--list .\listings\startup_cw32f003.lst --xref -o .\objects\startup_cw32f003.o --depend .\objects\startup_cw32f003.d)
